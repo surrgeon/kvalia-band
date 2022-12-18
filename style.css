@@ -29,7 +29,8 @@
     position: absolute;
 }
 
-.loaded .preloader {
+.loaded .preloader,
+.tophead {
   display: none;
 }
 
@@ -55,7 +56,6 @@ header {
 }
 
 .tophead {
-  display: none;
   justify-content: center;
   width: 100%;
   z-index: 27;
@@ -172,6 +172,11 @@ body,
   box-shadow: none;
 }
 
+.icon {
+  -webkit-transition: 0.2s;
+        transition: 0.2s;
+}
+
 @media screen and (min-width: 1032px) {
     body{
     margin: 18vw 0 0 0 !important;
@@ -187,6 +192,8 @@ body,
     }
     .tophead {
       display: flex;
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
     }
     .preloader {
     transform: scale(2.0);
@@ -196,16 +203,30 @@ body,
     }
     .button {
         margin: 0 0 5.32vw;
-        zoom: 1.28; 
         box-shadow: 0 0 3.72vw rgb(0 0 0 / 0.07);
         -webkit-transition: 0.3s;
         transition: 0.3s;
     }
     .button:hover {
-    transform: scale(0.9);
+    transform: scale(0.92);
     transform-origin: center center;
     border-radius: 4.32vw;
     box-shadow: 0 0 2.13vw rgb(0 0 0 / 0.1);
+    }
+    .icon:hover{
+      transform: scale(1.07);
+      transform-origin: center center;
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
+    }
+    .link:hover{
+      opacity: 0.95;
+    }
+    .tophead:hover{
+      transform: scale(1.02);
+      transform-origin: center center;
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
     }
     .stream-container {
         max-width: 100%;
