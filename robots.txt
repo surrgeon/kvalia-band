@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /error.html
+Disallow: assets/
+Disallow: fonts/
+
+Host: https://kvalia.band
+Sitemap: https://kvalia.band/sitemap.xml
