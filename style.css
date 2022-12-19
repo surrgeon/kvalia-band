@@ -202,10 +202,6 @@ body,
       -webkit-transition: 0.2s;
       transition: 0.2s;
     }
-    .preloader svg {
-    width: 256px;
-    height: 256px;
-    }
     .page {
         margin-bottom: 3.72vw;
     }
