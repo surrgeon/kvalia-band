@@ -40,6 +40,19 @@ body {
   text-decoration: none;
 }
 
+body::-webkit-scrollbar,
+.stream-container::-webkit-scrollbar {
+  display: none;
+}
+
+body,
+.stream-container {
+  transition: 0.3s;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 footer {
   margin-top: 12.9vw;
   margin-bottom: 8.8vw;
@@ -66,13 +79,8 @@ footer {
   overflow: hidden;
 }
 
-.kvalia {
-  position: absolute;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
+.loaded {
+  overflow: scroll;
 }
 
 .tophead {
@@ -86,13 +94,18 @@ footer {
   user-select: none;
 }
 
-.loaded {
-  overflow: scroll;
-}
-
 .loaded .preloader,
 .tophead {
   display: none;
+}
+
+.kvalia {
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .kvalia-cover {
@@ -145,18 +158,6 @@ footer {
   width: auto;
 }
 
-body::-webkit-scrollbar,
-.stream-container::-webkit-scrollbar {
-  display: none;
-}
-
-body,
-.stream-container {
-  transition: 0.3s;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
 
 .button {
   display: flex;
@@ -199,17 +200,17 @@ body,
     display: none;
   }
 
+  .tophead {
+    display: flex;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+
   .kvalia {
     transform: scale(0.7);
     transform-origin: top center;
     right: 0;
     left: 0;
-  }
-
-  .tophead {
-    display: flex;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
   }
 
   .page {
@@ -221,6 +222,25 @@ body,
     box-shadow: 0 0 3.72vw rgb(0 0 0 / 0.07);
     -webkit-transition: 0.3s;
     transition: 0.3s;
+  }
+
+  .stream-container {
+    max-width: 100%;
+  }
+
+  .stream {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8.54vw 0 0 0;
+    width: auto;
+  }
+  .stream li {
+    margin-right: 0;
+  }
+
+  .pad {
+    display: none;
   }
 
   .button:hover {
@@ -243,22 +263,6 @@ body,
     transform-origin: center center;
     -webkit-transition: 0.2s;
     transition: 0.2s;
-  }
-  .stream-container {
-    max-width: 100%;
-  }
-  .stream {
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    padding: 8.54vw 0 0 0;
-    width: auto;
-  }
-  .stream li {
-    margin-right: 0;
-  }
-  .pad {
-    display: none;
   }
 }
 
@@ -286,7 +290,7 @@ p {
 }
 
 strong {
-  /* Eng */
+  /* Latin */
   font-family: "regular";
   font-style: normal;
   font-weight: normal;
@@ -299,7 +303,7 @@ strong {
 }
 
 em {
-  /* Rus */
+  /* Cyrillic */
   font-family: "italic";
   font-style: normal;
   font-weight: normal;
