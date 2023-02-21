@@ -7,9 +7,14 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://kvalia.band/split-2023.html</loc>
+  <lastmod>2023-02-21T10:39:26+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
   <loc>https://kvalia.band/giggls-2022.html</loc>
   <lastmod>2022-12-19T10:39:26+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.70</priority>
 </url>
 <url>
   <loc>https://kvalia.band/sgsm-2020.html</loc>
@@ -19,22 +24,22 @@
 <url>
   <loc>https://kvalia.band/mmxvi-2016.html</loc>
   <lastmod>2022-12-19T10:39:26+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.70</priority>
 </url>
 <url>
   <loc>https://kvalia.band/kvalia-2015.html</loc>
   <lastmod>2022-12-19T10:39:26+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.70</priority>
 </url>
 <url>
   <loc>https://kvalia.band/about.html</loc>
   <lastmod>2022-12-19T10:39:26+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.85</priority>
 </url>
 <url>
   <loc>https://kvalia.band/index.html</loc>
   <lastmod>2022-12-19T10:39:26+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.50</priority>
 </url>
 
 </urlset>
