@@ -3,5 +3,5 @@ Disallow: /error.html
 Disallow: assets/
 Disallow: fonts/
 
-Host: https://kvalia.band
+Host: https://kvalia.band/index.html
 Sitemap: https://kvalia.band/sitemap.xml
