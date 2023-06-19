@@ -10,7 +10,7 @@
 }
 
 .preloader {
-  padding: 32px;
+  padding: 24px;
   overflow: hidden;
   background: var(--white);
   top: 0;
