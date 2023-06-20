@@ -24,6 +24,11 @@
   display: none;
 }
 
+.logo {
+  width: 64px; 
+  height: 64px;
+}
+
 html {
   scroll-behavior: smooth;
   background: var(--black);
@@ -172,6 +177,11 @@ strong {
 
 @media screen and (min-width: 960px) {
  
+
+.logo {
+  width: 32px; 
+  height: 32px;
+}
 
 .small {
   flex-basis: calc(100% / 3);
