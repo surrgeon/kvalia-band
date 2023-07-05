@@ -51,6 +51,7 @@ body {
 }
 
 main {
+  margin: 4vw !important;
 }
 
 article {
@@ -121,8 +122,7 @@ p {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  width: 88vw;
-  margin-top: 6vw;
+  width: 100%;
   margin-bottom: 6vw;
   justify-content: space-between;
 }
@@ -148,35 +148,41 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 4vw;
-  align-items: center;
   flex-direction: column;
   justify-content: center;
   width: auto;
 }
 
+.popups {
+}
+
 .modal {
-  width: 100%;
+  padding: 4vw;
+  max-height: 60%;
+  width: auto;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: -100%;
   display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-radius: 4vw 4vw 0 0;
   background-color: var(--white);
+  overflow: auto;
 }
 
-.modal .navigation {
-  width: 100vw;
+
+#music-sh21-modal:checked {
+  display: flex;
 }
 
-.button {
-  width: 84vw;
+.button { 
+  margin: 0 4vw;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 2vw;
+  gap: 4vw;
   align-items: center;
   align-content: center;
   border-radius: 2vw;
@@ -215,7 +221,7 @@ p {
 }
 
 .button:hover {
-  width: 86vw;
+  margin: 0 2vw;
   animation-name: btn-hover;
   animation-duration: 0.5s;
 }
@@ -250,12 +256,6 @@ a {
 
 @media screen and (min-width: 960px) {
 
-main {
-  width: 200%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .bg {
   width: 100vw;
 }
