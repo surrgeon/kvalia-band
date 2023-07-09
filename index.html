@@ -54,19 +54,16 @@
   <main>
 <article>
 
-    <div class="bg">
-      <img src="media/_bg-mobile.jpg"/>
-    </div>
-
     <section class="navigation">
         <a href="#share-page">
-          <img class="icon" src="assets/icon-dots.svg"/>
+          <img class="icon" src="assets/icon-share.svg"/>
         </a>
     </section>
 
     <section>
-      <img class="avatar" title="kvalia-band" src="media/_kvalia-avatar.jpg"/>
-      <h1 style="margin-bottom: 4vw; color: var(--white); text-align: center;">квалиа</h1>
+      <img class="avatar" title="about-kvalia-band" src="media/_kvalia-avatar.jpg"/>
+      <h1 style="margin-bottom: 4vw; color: var(--white); text-align: center;">
+      квалиа</h1>
     </section>
 
         <section class="linktree">
@@ -81,24 +78,34 @@
                   <p>Sun as a Dream</p>
               </a>
                     <a href="#video-saad-share">
-                      <img class="icon" src="assets/icon-share.svg"/>
+                      <img class="icon" src="assets/icon-dots.svg"/>
                     </a>
                 </div>
             </li>
-
+            
             <li>
-              <input id="music-sh21-modal" type="checkbox">
-                <div class="button">
-                  <a href="#music-sh21-modal">
+                <div class="button" id="openDialog">
                   <img src="media/music-sh21-2023.jpg"/>
-                  </a>
-                  <a href="#music-sh21-modal">
                   <p>Satire and Humor of the Early 21st&nbsp;Century — 2023</p>
-                  </a>
-                    <a href="#music-sh21-share">
-                    <img class="icon" src="assets/icon-share.svg"/>
-                    </a>
+                    <img class="icon" src="assets/icon-dots.svg"/>
                 </div>
+
+                <dialog id="kDialog">
+                  
+                    <!--<div class="navigation sticky" style="margin-bottom: 3vw;">
+
+                        <button id="closeDialog">
+                          <img class="icon-modal" src="assets/icon-close.svg"/>
+                        </button>
+
+                        <h3 style="text-align: center;">Сатира и Юмор Начала XXI в.</h3>
+
+                        <button id="shareDialog">
+                          <img class="icon-modal" src="assets/icon-share.svg"/>
+                        </button>
+                    </div>-->
+                <object type="text/html" data="satire-and-humor-of-the-early-21st-centiry-2023.html"></object>
+                </dialog>
             </li>
 
             <li>
@@ -110,7 +117,7 @@
                   <p>Kvalia + Prognoz Pogody</p>
                 </a>
                     <a href="#merch-split-share">
-                    <img class="icon" src="assets/icon-share.svg"/>
+                    <img class="icon" src="assets/icon-dots.svg"/>
                   </a>
                 </div>
             </li>
@@ -122,7 +129,7 @@
                   <a href="#text-clowns-popup">
                   <p>Clowns for Catastrophe</p></a>
                   <a href="#text-clowns-share">
-                  <img class="icon" src="assets/icon-share.svg"/></a>
+                  <img class="icon" src="assets/icon-dots.svg"/></a>
                 </div>
             </li>
 
@@ -133,7 +140,7 @@
                   <a href="#live-giggls-popup">
                   <p>Live at Gigglz</p></a>
                   <a href="#live-giggls-share">
-                  <img class="icon" src="assets/icon-share.svg"/></a>
+                  <img class="icon" src="assets/icon-dots.svg"/></a>
                 </div>
             </li>
 
@@ -144,7 +151,7 @@
                   <a href="#merch-sgsm-popup">
                   <p>Vinyl: Scholastic Dreams of&nbsp;Forceful Machines</p></a>
                   <a href="#merch-sgsm-share">
-                  <img class="icon" src="assets/icon-share.svg"/></a>
+                  <img class="icon" src="assets/icon-dots.svg"/></a>
                 </div>
             </li>
 
@@ -155,7 +162,7 @@
                   <a href="#music-sgsm-popup">
                   <p>Scholastic Dreams of Forceful&nbsp;Machines — 2020</p></a>
                   <a href="#music-sgsm-share">
-                  <img class="icon" src="assets/icon-share.svg"/></a>
+                  <img class="icon" src="assets/icon-dots.svg"/></a>
                 </div>
             </li>
 
@@ -166,7 +173,7 @@
                   <a href="#video-nonresist-popup">
                   <p>Nonresistance</p></a>
                   <a href="#video-nonresist-share">
-                  <img class="icon" src="assets/icon-share.svg"/></a>
+                  <img class="icon" src="assets/icon-dots.svg"/></a>
                 </div>
             </li>
 
@@ -177,7 +184,7 @@
                   <a href="#music-mmxvi-popup">
                   <p>MMXVI — 2016</p></a>
                   <a href="#music-mmxvi-share">
-                  <img class="icon" src="assets/icon-share.svg"/></a>
+                  <img class="icon" src="assets/icon-dots.svg"/></a>
                 </div>
             </li>
 
@@ -188,7 +195,7 @@
                   <a href="#live-nz-popup">
                   <p>Live at Novoy Zari St</p></a>
                   <a href="#live-nz-share">
-                  <img class="icon" src="assets/icon-share.svg"/></a>
+                  <img class="icon" src="assets/icon-dots.svg"/></a>
                 </div>
             </li>
 
@@ -199,54 +206,11 @@
                   <a href="#music-kvalia-popup">
                   <p>Kvalia — 2015</p></a>
                   <a href="#music-kvalia-share">
-                  <img class="icon" src="assets/icon-share.svg"/></a>
+                  <img class="icon" src="assets/icon-dots.svg"/></a>
                 </div>
             </li>
 
           </ul>
-        </section>
-
-        <section class="modal-container">
-    <div id="music-sh21-modal" class="modal">
-        <div class="navigation">
-
-        <a href="#close">
-          <img class="icon" src="assets/icon-close.svg"/>
-        </a>
-
-        <h3 style="text-align: center;">Сатира и Юмор Начала XXI в.</h3>
-
-        <a href="#share-page">
-          <img class="icon" src="assets/icon-share.svg"/>
-        </a>
-        </div>
-          <iframe src="./header.html">
-            
-          </iframe>
-
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1fJy4KoXEMoTl18ue1reSC?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-              
-            </iframe>
-
-
-          <ul class="links">
-            <li>
-              <div class="button">
-              <a href="#video-saad-popup">
-                  <img 
-                  src="assets/stream-sf.svg"/>
-              </a>
-              <a style="width: auto;" href="#video-saad-popup">
-                  <p>Spotify</p>
-              </a>
-                    <a href="#video-saad-share">
-                      <img class="icon" src="assets/icon-go.svg"/>
-                    </a>
-                </div>
-            </li></ul>
-    </div>
-
-
         </section>
 
 </article>
@@ -263,7 +227,7 @@
         </a>
   </div>
   <div>
-    <a href="https://youtu.be/0epXAKND7GE/">
+    <a href="https://www.youtube.com/@kvalia_band/">
           <img class="icon" src="assets/social-yt.svg"/>
         </a>
   </div>
@@ -272,9 +236,26 @@
   </main>
 
     <script>
+
       window.onload = function () {
         document.body.classList.add("loaded");
       };
+
+    var openDialogButton = document.getElementById('openDialog');
+    var demoDialog = document.getElementById('kDialog');
+    // "Open dialog box" button opens the <dialog> 
+    openDialog.addEventListener('click', function () {
+    if (typeof demoDialog.showModal === "function") {
+    kDialog.showModal();
+    } else {
+    console.log("The <dialog> API is not supported by this browser");
+    }
+    });
+
+    closeDialog.addEventListener('click', function() {
+  kDialog.close();
+  })
+
     </script>
   </body>
 </html>
