@@ -12,7 +12,7 @@
 .preloader {
   position: fixed;
   overflow: hidden;
-  background: var(--white);
+  background: white;
   top: 0;
   left: 0;
   display: flex;
@@ -75,13 +75,13 @@ object {
   bottom: 0;
   left: 0;
   border-radius: 4vw 4vw 0 0;
-  background-color: var(--white);
+  background-color: white;
 }
 
 dialog {
   padding: 0 !important;
   width: 100%;
-  background-color: var(--white);
+  background-color: white;
   overflow: auto;
   border-style: none;
 }
@@ -149,12 +149,6 @@ p {
   color: var(--black);
 }
 
-.sticky {
-  background-color: var(--white);
-  position: sticky;
-  top: 0px;
-}
-
 .navigation {
   display: flex;
   flex-direction: row-reverse;
@@ -168,7 +162,7 @@ p {
   padding: 2vw;
   width: 5vw;
   border-radius: 50%;
-  background-color: var(--white);
+  background-color: white;
 }
 
 .navigation .icon-modal {
@@ -178,8 +172,12 @@ p {
   border-radius: 25%;
 }
 
-.showmore {
-  
+.sticky {
+  margin-bottom: 3vw;
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
 }
 
 .avatar {
@@ -216,7 +214,7 @@ p {
   margin: 0 1vw;
 
   user-select: none;
-  background: var(--white);
+  background: white;
 
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -313,6 +311,34 @@ p {
   opacity: 1;
   cursor: pointer;
   background-color: transparent;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  padding: 8vw 0 8vw;
+  border-top: 1px solid #d8d8d8;
+  position: fixed;
+  bottom: 0px;
+}
+
+.bottom .button {
+  width: 78%;
+  justify-content: center;
+  margin: 0;
+  padding: 4vw;
+  border-radius: 8vw;
+  border: 1px solid #d8d8d8;
+}
+
+.bottom .button:hover {
+  cursor: pointer;
+  background-color: #F7F7F7;
+  border-color: #d8d8d8;
+  animation-name: none;
 }
 
 footer .icon {
