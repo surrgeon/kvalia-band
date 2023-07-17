@@ -46,193 +46,64 @@
   </head>
 
   <body>
-    
+
     <div class="preloader">
       <img src="loader.svg" style="width: 16vw; height: 16vw;"/>
     </div>
 
   <main>
-<article>
+  <article>
 
-    <section class="navigation">
-        <a href="#share-page">
-          <img class="icon" src="assets/icon-share.svg"/>
-        </a>
-    </section>
+    <header>
 
-    <section>
-      <img class="avatar" title="about-kvalia-band" src="media/_kvalia-avatar.jpg"/>
-      <h1 style="margin-bottom: 4vw; color: white; text-align: center;">
-      квалиа</h1>
-    </section>
+      <button id="openMainShare" title="share-kvalia-band" class="icon">
+          <img src="asset/white-dots.svg"/>
+      </button>
 
-        <section class="linktree">
-          <ul class="links">
+      <button id="openAbout">
+          <h1>квалиа</h1> <h2 style="display: none;">kvalia</h2> 
+      </button>
+    </header>
+
+    <nav>
+          <ul>
             <li>
-              <div class="button">
-              <a href="#video-saad-popup">
-                  <img 
-                  src="media/video-sun-as-a-dream_cover.jpg"/>
-              </a>
-              <a style="width: auto;" href="#video-saad-popup">
-                  <p>Sun as a Dream</p>
-              </a>
-                    <a href="#video-saad-share">
-                      <img class="icon" src="assets/icon-dots.svg"/>
-                    </a>
+                <div class="openpage" id="openDialog">
+                  <img class="preview" 
+                        src="
+                        img/satire-and-humor-2023-kvalia-cover-small.jpg 
+                        "/>
+                    <p>Сатира и Юмор Начала XXI&nbsp;в. </p>
+                    <p style="display: none;">Satire and Humor of the Early 21st&nbsp;Century — 2023</p>
+                      <button id="shareSatire" title="satire-and-humor-2023" class="icon">
+                        <img src="asset/black-dots.svg"/>
+                      </button>
                 </div>
             </li>
-            
-            <li>
-                <div class="button" id="openDialog">
-                  <img src="media/music-sh21-2023.jpg"/>
-                  <p>Satire and Humor of the Early 21st&nbsp;Century — 2023</p>
-                    <img class="icon" src="assets/icon-dots.svg"/>
-                </div>
+          </ul>
+    </nav>
 
-                <dialog id="kDialog">
-                  
-                    <!--<div class="navigation sticky" style="margin-bottom: 3vw;">
+  </article>
 
+<section class="page">
+  
+                <dialog id="satireHumorDialog">
+
+                    <div class="modalhead">
                         <button id="closeDialog">
-                          <img class="icon-modal" src="assets/icon-close.svg"/>
+                          <img class="icon" src="asset/icon-close.svg"/>
                         </button>
 
-                        <h3 style="text-align: center;">Сатира и Юмор Начала XXI в.</h3>
+                        <h3 style="text-align: center;">Сатира и Юмор Начала XXI&nbsp;в.</h3>
 
                         <button id="shareDialog">
-                          <img class="icon-modal" src="assets/icon-share.svg"/>
+                          <img class="icon" src="asset/icon-share.svg"/>
                         </button>
-                    </div>-->
+                      </div>
+
                 <object type="text/html" data="satire-and-humor-of-the-early-21st-centiry-2023.html"></object>
                 </dialog>
-            </li>
-
-            <li>
-                <div class="button">
-                  <a href="#merch-split-popup">
-                  <img src="media/merch-split-2023.jpg"/>
-                </a>
-                  <a href="#merch-split-popup">
-                  <p>Kvalia + Prognoz Pogody</p>
-                </a>
-                    <a href="#merch-split-share">
-                    <img class="icon" src="assets/icon-dots.svg"/>
-                  </a>
-                </div>
-            </li>
-
-            <li>
-                <div class="button">
-                  <a href="#text-clowns-popup">
-                  <img src="media/text-clowns-2023.jpg"/></a>
-                  <a href="#text-clowns-popup">
-                  <p>Clowns for Catastrophe</p></a>
-                  <a href="#text-clowns-share">
-                  <img class="icon" src="assets/icon-dots.svg"/></a>
-                </div>
-            </li>
-
-            <li>
-                <div class="button">
-                  <a href="#live-giggls-popup">
-                  <img src="media/live-gigglz-2022.jpg"/></a>
-                  <a href="#live-giggls-popup">
-                  <p>Live at Gigglz</p></a>
-                  <a href="#live-giggls-share">
-                  <img class="icon" src="assets/icon-dots.svg"/></a>
-                </div>
-            </li>
-
-            <li>
-                <div class="button">
-                  <a href="#merch-sgsm-popup">
-                  <img src="media/merch-sgsm-2021.jpg"/></a>
-                  <a href="#merch-sgsm-popup">
-                  <p>Vinyl: Scholastic Dreams of&nbsp;Forceful Machines</p></a>
-                  <a href="#merch-sgsm-share">
-                  <img class="icon" src="assets/icon-dots.svg"/></a>
-                </div>
-            </li>
-
-            <li>
-                <div class="button">
-                  <a href="#music-sgsm-popup">
-                  <img src="media/music-sgsm-2020.jpg"/></a>
-                  <a href="#music-sgsm-popup">
-                  <p>Scholastic Dreams of Forceful&nbsp;Machines — 2020</p></a>
-                  <a href="#music-sgsm-share">
-                  <img class="icon" src="assets/icon-dots.svg"/></a>
-                </div>
-            </li>
-
-            <li>
-                <div class="button">
-                  <a href="#video-nonresist-popup">
-                  <img src="media/video-nonresistance-cover.jpg"/></a>
-                  <a href="#video-nonresist-popup">
-                  <p>Nonresistance</p></a>
-                  <a href="#video-nonresist-share">
-                  <img class="icon" src="assets/icon-dots.svg"/></a>
-                </div>
-            </li>
-
-            <li>
-                <div class="button">
-                  <a href="#music-mmxvi-popup">
-                  <img src="media/music-mmxvi-2016.jpg"/></a>
-                  <a href="#music-mmxvi-popup">
-                  <p>MMXVI — 2016</p></a>
-                  <a href="#music-mmxvi-share">
-                  <img class="icon" src="assets/icon-dots.svg"/></a>
-                </div>
-            </li>
-
-            <li>
-                <div class="button">
-                  <a href="#live-nz-popup">
-                  <img src="media/live-nz-2016.jpg"/></a>
-                  <a href="#live-nz-popup">
-                  <p>Live at Novoy Zari St</p></a>
-                  <a href="#live-nz-share">
-                  <img class="icon" src="assets/icon-dots.svg"/></a>
-                </div>
-            </li>
-
-            <li>
-                <div class="button">
-                  <a href="#music-kvalia-popup">
-                  <img src="media/music-kvalia-2015.jpg"/></a>
-                  <a href="#music-kvalia-popup">
-                  <p>Kvalia — 2015</p></a>
-                  <a href="#music-kvalia-share">
-                  <img class="icon" src="assets/icon-dots.svg"/></a>
-                </div>
-            </li>
-
-          </ul>
-        </section>
-
-</article>
-
-<footer>
-  <div>
-    <a href="https://www.instagram.com/kvalia_band/">
-          <img class="icon" src="assets/social-ig.svg"/>
-        </a>
-  </div>
-  <div>
-    <a href="https://open.spotify.com/artist/1LAJZmgQeOryYUV8qoF9tF/">
-          <img class="icon" src="assets/social-sf.svg"/>
-        </a>
-  </div>
-  <div>
-    <a href="https://www.youtube.com/@kvalia_band/">
-          <img class="icon" src="assets/social-yt.svg"/>
-        </a>
-  </div>
-</footer>
-
+</section>
   </main>
 
     <script>
@@ -242,18 +113,18 @@
       };
 
     var openDialogButton = document.getElementById('openDialog');
-    var demoDialog = document.getElementById('kDialog');
+    var demoDialog = document.getElementById('satireHumorDialog');
     // "Open dialog box" button opens the <dialog> 
     openDialog.addEventListener('click', function () {
     if (typeof demoDialog.showModal === "function") {
-    kDialog.showModal();
+    satireHumorDialog.showModal();
     } else {
     console.log("The <dialog> API is not supported by this browser");
     }
     });
 
     closeDialog.addEventListener('click', function() {
-  kDialog.close();
+  satireHumorDialog.close();
   })
 
     </script>

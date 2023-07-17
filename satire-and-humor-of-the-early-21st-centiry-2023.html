@@ -22,6 +22,10 @@
     <meta name="msapplication-navbutton-color" content="#fff" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#fff" />
     <link rel="canonical" href="https://kvalia.band" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 
     <meta property="og:type" content="website" />
@@ -55,151 +59,110 @@
     </script>
   </head>
 
-  <body style="background-color: white;">
+  <body style="background: none; background-color: white;">
 
     <div class="preloader">
       <img src="loader.svg" style="width: 16vw; height: 16vw;"/>
     </div>
         
-<article>
+<article style="margin: 2vw 6vw 32vw 6vw !important;">
 
-                    <div class="navigation sticky">
-
-                        <button id="closeDialog">
-                          <img class="icon-modal" src="assets/icon-close.svg"/>
-                        </button>
-
-                        <h3 style="text-align: center;">Сатира и Юмор Начала XXI в.</h3>
-
-                        <button id="shareDialog">
-                          <img class="icon-modal" src="assets/icon-share.svg"/>
-                        </button>
-                    </div>
-
-    <!--
-    <section>
-      <img class="avatar" title="kvalia-band" src="media/_kvalia-avatar.jpg"/>
-      <h1 style="margin-bottom: 4vw; color: white; text-align: center;">квалиа</h1>
-    </section>
-    -->
-        <section style="margin-bottom: 8vw;">
-            <iframe style="border-radius:20px" src="https://open.spotify.com/embed/album/1fJy4KoXEMoTl18ue1reSC?utm_source=generator" width="88%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+        <div class="audioembed">
+            <iframe src="https://open.spotify.com/embed/album/1fJy4KoXEMoTl18ue1reSC?utm_source=generator" width="100%" height="352px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
               
             </iframe>
-            </section>
-        <section class="linktree" style="margin-bottom: 36vw;">
-          <ul class="links listento">
-            <p style="padding: 0 0 2vw;">Avaliable to stream here</p>
+            </div>
+
+        <nav>
+          <ul>
+            <p style="opacity: 50%;">Avaliable to stream here</p>
             <li> 
-              <div class="button">
-              <a href="#spotify">
-                  <img 
-                  src="assets/stream-sf.svg"/>
+
+                <a class="openlink" href="https://open.spotify.com/album/1fJy4KoXEMoTl18ue1reSC?utm_campaign=com.app" target="_parent">
+                <div class="stream"><img class="streamsvg"
+                  src="asset/stream-sf.svg"/>
                   <p>Spotify</p>
-              </a>
-                    <a href="https://open.spotify.com/album/1fJy4KoXEMoTl18ue1reSC?utm_campaign=com.app">
-                      <img class="icon" src="assets/icon-go.svg"/>
-                    </a>
                 </div>
+                  <img class="icon" src="asset/icon-go.svg"/>
+                </a>
             </li>
 
             
             <li>
-              <div class="button">
-              <a href="#sf">
-                  <img 
-                  src="assets/stream-am.svg"/>
+              <a class="openlink" href="https://geo.music.apple.com/bg/album/_/1675572683?mt=1&app=music&ls=1" target="_parent">
+                <div class="stream"><img class="streamsvg"
+                  src="asset/stream-am.svg"/>
                   <p>Apple Music</p>
-              </a>
-                    <a href="#spoty-share">
-                      <img class="icon" src="assets/icon-go.svg"/>
-                    </a>
                 </div>
+                      <img class="icon" src="asset/icon-go.svg"/>
+                </a>
             </li>
 
             <li>
-              <div class="button">
-              <a href="#sf">
-                  <img 
-                  src="assets/stream-yt.svg"/>
+              <a class="openlink" href="https://youtube.com/playlist?list=OLAK5uy_loGZwpaF-Ns56dPLsamWMfxggRSxEDmT0" target="_parent">
+                <div class="stream"><img class="streamsvg"
+                  src="asset/stream-yt.svg"/>
                   <p>YouTube</p>
-              </a>
-                    <a href="#spoty-share">
-                      <img class="icon" src="assets/icon-go.svg"/>
-                    </a>
                 </div>
+                      <img class="icon" src="asset/icon-go.svg"/>
+                </a>
             </li>
 
             <li>
-              <div class="button">
-              <a href="#sf">
-                  <img 
-                  src="assets/stream-bc.svg"/>
+              <a class="openlink" href="https://kvalia.bandcamp.com/album/xxi" target="_parent">
+                <div class="stream"><img class="streamsvg"
+                  src="asset/stream-bc.svg"/>
                   <p>Bandcamp</p>
-              </a>
-                    <a href="#spoty-share">
-                      <img class="icon" src="assets/icon-go.svg"/>
-                    </a>
                 </div>
+                      <img class="icon" src="asset/icon-go.svg"/>
+                </a>
             </li>
 
-            <li>
-              <div class="button">
-              <a href="#sf">
-                  <img 
-                  src="assets/stream-dz.svg"/>
+            <li class="morelinks">
+              <a class="openlink" href="https://www.deezer.com/album/391799077" target="_parent">
+                <div class="stream"><img class="streamsvg"
+                  src="asset/stream-dz.svg"/>
                   <p>Deezer</p>
-              </a>
-                    <a href="#spoty-share">
-                      <img class="icon" src="assets/icon-go.svg"/>
-                    </a>
                 </div>
+                  <img class="icon" src="asset/icon-go.svg"/>
+                </a>
             </li>
 
-            <li>
-              <div class="button">
-              <a href="#sf">
-                  <img 
-                  src="assets/stream-td.svg"/>
+            <li class="morelinks">
+              <a class="openlink" href="https://listen.tidal.com/album/269270237" target="_parent">
+                <div class="stream"><img class="streamsvg"
+                  src="asset/stream-td.svg"/>
                   <p>Tidal</p>
-              </a>
-                    <a href="#spoty-share">
-                      <img class="icon" src="assets/icon-go.svg"/>
-                    </a>
                 </div>
+                      <img class="icon" src="asset/icon-go.svg"/>
+                </a>
             </li>
 
-            <li>
-              <div class="button">
-              <a href="#sf">
-                  <img 
-                  src="assets/stream-ytm.svg"/>
+            <li class="morelinks">
+              <a class="openlink" href="https://music.youtube.com/playlist?list=OLAK5uy_mcZaaApdAy3TGGaenA5_NlBe2Z-CGWXP8" target="_parent">
+                <div class="stream"><img class="streamsvg"
+                  src="asset/stream-ytm.svg"/>
                   <p>YouTube Music</p>
-              </a>
-                    <a href="#spoty-share">
-                      <img class="icon" src="assets/icon-go.svg"/>
-                    </a>
                 </div>
+                      <img class="icon" src="asset/icon-go.svg"/>
+                </a>
             </li>
 
-            <li>
-              <div class="button">
-              <a href="#sf">
-                  <img 
-                  src="assets/stream-pd.svg"/>
+            <li class="morelinks">
+              <a class="openlink" href="https://www.pandora.com/artist/kvalia-and-prognoz-pogody/satira-i-iumor-nachala-xxi-5/ALt99z9VtcJmXq9" target="_parent">
+                <div class="stream"><img class="streamsvg"
+                  src="asset/stream-pd.svg"/>
                   <p>Pandora</p>
-              </a>
-                    <a href="#spoty-share">
-                      <img class="icon" src="assets/icon-go.svg"/>
-                    </a>
-                </div>
+                  </div>
+                      <img class="icon" src="asset/icon-go.svg"/>
+                </a>
             </li>
           </ul>
-        </section>
+        </nav>
 
-          <div class="bottom">
-            <div class="button">
-            <h3>Show more</h3>
+          <div class="modalfoot">
+            <div class="showmore">
+            <h3 style="text-align: center;">Show more</h3>
             </div>
           </div>
 
