@@ -67,19 +67,37 @@
 
     <nav>
           <ul>
+
             <li>
-                <div class="openpage" id="openDialog">
+                <div class="openpage" id="openSaadVideo" title="sun-as-a-dream-video">
                   <img class="preview" 
                         src="
-                        img/satire-and-humor-2023-kvalia-cover-small.jpg 
+                        img/sun-as-a-dream-video-2023-kvalia-small.jpg 
                         "/>
-                    <p>Сатира и Юмор Начала XXI&nbsp;в. </p>
-                    <p style="display: none;">Satire and Humor of the Early 21st&nbsp;Century — 2023</p>
-                      <button id="shareSatire" title="satire-and-humor-2023" class="icon">
+                    <p>Солнце-сон</p> 
+                    <p style="display: none;">Sun as a Dream</p>
+                      <button id="shareSaad" title="satire-and-humor-2023" class="icon">
                         <img src="asset/black-dots.svg"/>
                       </button>
                 </div>
             </li>
+
+            <li>
+              <a href="#satireHumorDialog-32">
+                <div class="openpage" id="openSatireDialog" title="satire-and-humor-2023">
+                  <img class="preview"
+                        src="
+                        img/satire-and-humor-2023-kvalia-cover-small.jpg 
+                        "/>
+                    <p>Сатира и Юмор Начала XXI&nbsp;в.</p>
+                    <p style="display: none;">Satire and Humor of the Early 21st&nbsp;Century</p>
+                      <button id="shareSatire" class="icon">
+                        <img src="asset/black-dots.svg"/>
+                      </button>
+                </div>
+              </a>
+            </li>
+
           </ul>
     </nav>
 
@@ -96,7 +114,7 @@
 
                         <h3 style="text-align: center;">Сатира и Юмор Начала XXI&nbsp;в.</h3>
 
-                        <button id="shareDialog">
+                        <button id="shareSatire">
                           <img class="icon" src="asset/icon-share.svg"/>
                         </button>
                       </div>
@@ -112,10 +130,10 @@
         document.body.classList.add("loaded");
       };
 
-    var openDialogButton = document.getElementById('openDialog');
+    var openDialogButton = document.getElementById('openSatireDialog');
     var demoDialog = document.getElementById('satireHumorDialog');
-    // "Open dialog box" button opens the <dialog> 
-    openDialog.addEventListener('click', function () {
+
+    openSatireDialog.addEventListener('click', function () {
     if (typeof demoDialog.showModal === "function") {
     satireHumorDialog.showModal();
     } else {
@@ -124,8 +142,14 @@
     });
 
     closeDialog.addEventListener('click', function() {
-  satireHumorDialog.close();
-  })
+    satireHumorDialog.close();
+    })
+
+    /* ---- */
+
+    if(window.location.hash == "#satireHumorDialog-32") {
+    satireHumorDialog.showModal();  // Показать окно
+    }
 
     </script>
   </body>

@@ -58,7 +58,7 @@ article {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  gap: 8vw;
+  gap: 32px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -229,13 +229,17 @@ header {
   border-top: 0.75px solid var(--grey-20);
 }
 
-.showmore {
+.infobutton {
   width: 82%;
   cursor: pointer;
   background-color: white;
   border: 1px solid var(--grey-20);
   border-radius: 12vw;
   padding: 12px;
+}
+
+.moreinfo {
+  display: none;
 }
 
 .audioembed {
@@ -283,7 +287,7 @@ header {
   background-color: transparent;
 }
 
-.openlink:hover, .showmore:hover {
+.openlink:hover, .infobutton:hover {
   background-color: var(--grey-5);
 }
 
@@ -366,4 +370,15 @@ dialog:modal {
   max-height: 84vh;
 }
 
+}
+
+
+@media screen and (max-height: 482px) {
+
+  iframe {
+    height: 80px;
+  }
+  .audioembed {
+    height: 80px;
+  }
 }
