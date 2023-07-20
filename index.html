@@ -69,6 +69,7 @@
           <ul>
 
             <li>
+              <a href="#sun-as-a-dream-video">
                 <div class="openpage" id="openSaadVideo" title="sun-as-a-dream-video">
                   <img class="preview" 
                         src="
@@ -80,10 +81,11 @@
                         <img src="asset/black-dots.svg"/>
                       </button>
                 </div>
+              </a>
             </li>
 
             <li>
-              <a href="#satireHumorDialog-32">
+              <a href="#satire-and-humor-2023">
                 <div class="openpage" id="openSatireDialog" title="satire-and-humor-2023">
                   <img class="preview"
                         src="
@@ -98,20 +100,46 @@
               </a>
             </li>
 
+            <li>
+              <a href="#kvalia-prognoz-pogody-split-tape">
+                <div class="openpage" id="openSplitTapeDialog" title="kvalia-prognoz-pogody-split-tape">
+                  <img class="preview"
+                        src="
+                        img/satire-and-humor-tape-kvalia-prognoz-pogody-split-small.jpg 
+                        "/>
+                    <p>Квалиа + Прогноз Погоды</p>
+                    <p style="display: none;">Kvalia + Prognoz Pogody — Split Tape</p>
+                      <button id="shareSatire" class="icon">
+                        <img src="asset/black-dots.svg"/>
+                      </button>
+                </div>
+              </a>
+            </li>
+
           </ul>
     </nav>
 
   </article>
 
 <section class="page">
+
+            <dialog id="saadVideoDialog" class="vodeomodal" >
+              <div>
+                    <div class="modalhead videohead">
+                <button id="closeSaadDialog" class="icon">
+                <img src="asset/white-close.svg"/>
+                 </button>
+                </div>
+
+                <object type="text/html" data="video-sun-as-a-dream-2023.html"></object>
+              </div>
+            </dialog>
   
                 <dialog id="satireHumorDialog">
-
                     <div class="modalhead">
-                        <button id="closeDialog">
+                        <button id="closeSatireDialog">
                           <img class="icon" src="asset/icon-close.svg"/>
                         </button>
-
                         <h3 style="text-align: center;">Сатира и Юмор Начала XXI&nbsp;в.</h3>
 
                         <button id="shareSatire">
@@ -119,7 +147,9 @@
                         </button>
                       </div>
 
-                <object type="text/html" data="satire-and-humor-of-the-early-21st-centiry-2023.html"></object>
+                <object type="text/html" 
+                        data="satire-and-humor-of-the-early-21st-centiry-2023.html">
+                        </object>
                 </dialog>
 </section>
   </main>
@@ -131,25 +161,36 @@
       };
 
     var openDialogButton = document.getElementById('openSatireDialog');
-    var demoDialog = document.getElementById('satireHumorDialog');
+    var satireHumorDialog = document.getElementById('satireHumorDialog');
 
     openSatireDialog.addEventListener('click', function () {
-    if (typeof demoDialog.showModal === "function") {
+    if (typeof satireHumorDialog.showModal === "function") {
     satireHumorDialog.showModal();
     } else {
     console.log("The <dialog> API is not supported by this browser");
     }
     });
 
-    closeDialog.addEventListener('click', function() {
+    satireHumorDialog.addEventListener('click', ({target:satireHumorDialog}) => {
+    if (satireHumorDialog.nodeName === 'DIALOG') {
+    satireHumorDialog.close('dismiss')
+    }
+    })
+
+    closeSatireDialog.addEventListener('click', function() {
     satireHumorDialog.close();
+
     })
 
     /* ---- */
 
-    if(window.location.hash == "#satireHumorDialog-32") {
-    satireHumorDialog.showModal();  // Показать окно
+    if(window.location.hash == "#sun-as-a-dream-video") {
+    saadVideoDialog.showModal();  // Показать окно
     }
+    if(window.location.hash == "#satire-and-humor-2023") {
+    satireHumorDialog.showModal(); 
+    }
+
 
     </script>
   </body>

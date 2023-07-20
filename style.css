@@ -118,6 +118,16 @@ dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.videomod {
+  padding: 0 !important;
+  margin-bottom: 0;
+  max-width: 900;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0;
+  background-color: transparent;
+}
+
 object {
   position: relative;
   margin: 0 !important;
@@ -247,6 +257,11 @@ header {
   width: 88vw;
 }
 
+.videoembed {
+  border-radius: 20px;
+  width: 96vw;
+}
+
 .openpage {
   cursor: pointer;
   width: auto;
@@ -351,7 +366,6 @@ dialog:modal {
   border-radius: 16px;
 }
 }
-
 
 @media screen and (min-width: 960px) {
 
