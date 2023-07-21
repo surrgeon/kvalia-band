@@ -104,28 +104,8 @@ dialog {
   scroll-behavior: smooth;
 }
 
-dialog:modal {
-  padding: 0 !important;
-  margin-bottom: 0;
-  max-width: 568px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 16px 16px 0 0;
-  background-color: white;
-}
-
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-.videomod {
-  padding: 0 !important;
-  margin-bottom: 0;
-  max-width: 900;
-  display: flex;
-  flex-direction: column;
-  border-radius: 0;
-  background-color: transparent;
 }
 
 object {
@@ -227,6 +207,44 @@ header {
   color: white;
 }
 
+.modalvideohead {
+  position: sticky; 
+  top: 0; margin-bottom: 16px;
+  z-index: 9000;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2vw;
+  padding: 0;
+  border-radius: 0;
+  color: white;
+}
+
+.audiomodal dialog:modal {
+  padding: 0 !important;
+  margin-bottom: 0;
+  max-width: 568px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px 16px 0 0;
+  background-color: white;
+}
+
+.videomodal dialog:modal {
+  padding: 0 !important;
+  max-width: 100vw;
+  height: 74vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.videomodal dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.72);
+}
+
 .modalfoot {
   position: fixed;
   bottom: 0px;
@@ -253,16 +271,18 @@ header {
 }
 
 .audioembed {
-  border-radius: 20px;
+  border-radius: 16px;
   width: 88vw;
+  background-color: var(--grey-10);
 }
 
 .videoembed {
-  border-radius: 20px;
-  width: 96vw;
+  width: 100%;
+  border-radius: 0;
+  background-color: black;
 }
 
-.openpage {
+.openpageButton {
   cursor: pointer;
   width: auto;
   display: flex;
@@ -276,7 +296,7 @@ header {
   padding: 12px;
 }
 
-.openpage .icon {
+.openpageButton .icon {
   opacity: 100;
 }
 
@@ -328,6 +348,17 @@ header {
   background-color: var(--grey-5);
 }
 
+.modalvideohead .icon {
+  padding: 16px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: transparent;
+}
+.modalvideohead .icon:hover {
+  background-color: transparent;
+  border-color: white;
+}
+
 header .icon:hover {
   background-color: transparent;
   border-color: white;
@@ -359,12 +390,24 @@ header h1 {
 
 @media screen and (min-width: 568px) {
 
-dialog:modal {
+.audiomodal dialog:modal {
   max-height: 72vh;
   max-width: 420px;
   margin-bottom: auto;
   border-radius: 16px;
 }
+
+.videoembed {
+  border-radius: 16px;
+}
+
+.videomodal dialog:modal {
+  max-width: 92vw;
+  min-height: 320px;
+  max-height: 55vh;
+}
+
+
 }
 
 @media screen and (min-width: 960px) {
@@ -373,15 +416,19 @@ article {
   margin: 8vw 24vw !important;
 }
 
-.openpage .icon {
+.openpageButton .icon {
   opacity: 0;
 }
-.openpage:hover .icon {
+.openpageButton:hover .icon {
   opacity: 100;
 }
 
-dialog:modal {
+.audiomodal dialog:modal {
   max-height: 84vh;
+}
+
+.videomodal dialog:modal {
+  max-width: 62vw;
 }
 
 }
@@ -389,9 +436,6 @@ dialog:modal {
 
 @media screen and (max-height: 482px) {
 
-  iframe {
-    height: 80px;
-  }
   .audioembed {
     height: 80px;
   }

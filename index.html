@@ -67,10 +67,9 @@
 
     <nav>
           <ul>
-
             <li>
               <a href="#sun-as-a-dream-video">
-                <div class="openpage" id="openSaadVideo" title="sun-as-a-dream-video">
+                <div class="openpageButton" id="openSaadVideo" title="sun-as-a-dream-video">
                   <img class="preview" 
                         src="
                         img/sun-as-a-dream-video-2023-kvalia-small.jpg 
@@ -86,7 +85,7 @@
 
             <li>
               <a href="#satire-and-humor-2023">
-                <div class="openpage" id="openSatireDialog" title="satire-and-humor-2023">
+                <div class="openpageButton" id="openSatireDialog" title="satire-and-humor-2023">
                   <img class="preview"
                         src="
                         img/satire-and-humor-2023-kvalia-cover-small.jpg 
@@ -102,7 +101,7 @@
 
             <li>
               <a href="#kvalia-prognoz-pogody-split-tape">
-                <div class="openpage" id="openSplitTapeDialog" title="kvalia-prognoz-pogody-split-tape">
+                <div class="openpageButton" id="openSplitTapeDialog" title="kvalia-prognoz-pogody-split-tape">
                   <img class="preview"
                         src="
                         img/satire-and-humor-tape-kvalia-prognoz-pogody-split-small.jpg 
@@ -122,19 +121,21 @@
   </article>
 
 <section class="page">
-
-            <dialog id="saadVideoDialog" class="vodeomodal" >
-              <div>
-                    <div class="modalhead videohead">
+            <div class="videomodal">
+            <dialog id="saadVideoDialog">
+                    <div class="modalvideohead">
                 <button id="closeSaadDialog" class="icon">
                 <img src="asset/white-close.svg"/>
                  </button>
                 </div>
 
-                <object type="text/html" data="video-sun-as-a-dream-2023.html"></object>
-              </div>
+            <iframe class="videoembed" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/0epXAKND7GE?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+
+            </iframe>
             </dialog>
+            </div>
   
+                  <div class="audiomodal">
                 <dialog id="satireHumorDialog">
                     <div class="modalhead">
                         <button id="closeSatireDialog">
@@ -151,6 +152,7 @@
                         data="satire-and-humor-of-the-early-21st-centiry-2023.html">
                         </object>
                 </dialog>
+                      </div>
 </section>
   </main>
 
@@ -160,7 +162,33 @@
         document.body.classList.add("loaded");
       };
 
-    var openDialogButton = document.getElementById('openSatireDialog');
+      /* Солнце-сон */
+
+    var openSaadVideo = document.getElementById('openSaadVideo');
+    var saadVideoDialog = document.getElementById('saadVideoDialog');
+
+    openSaadVideo.addEventListener('click', function () {
+    if (typeof saadVideoDialog.showModal === "function") {
+    saadVideoDialog.showModal();
+    } else {
+    console.log("The <dialog> API is not supported by this browser");
+    }
+    });
+
+    saadVideoDialog.addEventListener('click', ({target:saadVideoDialog}) => {
+    if (saadVideoDialog.nodeName === 'DIALOG') {
+    saadVideoDialog.close('dismiss')
+    }
+    })
+
+    closeSaadDialog.addEventListener('click', function() {
+    saadVideoDialog.close();
+
+    })
+
+      /* Сатира и Юмор */
+
+    var openSatireDialog = document.getElementById('openSatireDialog');
     var satireHumorDialog = document.getElementById('satireHumorDialog');
 
     openSatireDialog.addEventListener('click', function () {
