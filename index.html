@@ -56,7 +56,7 @@
 
     <header>
 
-      <button id="openMainShare" title="share-kvalia-band" class="icon">
+      <button id="openMainShare" onclick="window.mainShareDialog.showModal();" title="share-kvalia-band" class="icon">
           <img src="asset/white-dots.svg"/>
       </button>
 
@@ -121,6 +121,7 @@
   </article>
 
 <section class="page">
+
             <div class="videomodal">
             <dialog id="saadVideoDialog">
                     <div class="modalvideohead">
@@ -142,7 +143,6 @@
                           <img class="icon" src="asset/icon-close.svg"/>
                         </button>
                         <h3 style="text-align: center;">Сатира и Юмор Начала XXI&nbsp;в.</h3>
-
                         <button id="shareSatire">
                           <img class="icon" src="asset/icon-share.svg"/>
                         </button>
@@ -153,6 +153,47 @@
                         </object>
                 </dialog>
                       </div>
+
+
+            <div class="sharemodal">
+            <dialog id="mainShareDialog">
+                    <div class="modalhead">
+                        <button id="closeMainShare" onclick="window.mainShareDialog.close();">
+                          <img class="icon" src="asset/icon-close.svg"/>
+                        </button>
+                        <h3 style="text-align: center;">Share this link</h3>
+
+                        <button id="">
+                          <img class="icon" style="visibility: hidden;" src="asset/icon-share.svg"/>
+                        </button>
+                    </div>
+
+                    <nav>
+                      <ul>
+                        
+                       <li>
+                        <a class="sharepageButton" href="snapchat://creativeKitWeb/camera/1?attachmentUrl=https://kvalia.band" target="_parent">
+                          <img class="sharesvg"
+                            src="asset/share-to=Snapchat.svg"/>
+                            <p>Share on Snapchat</p>
+                            <img class="icon" src="asset/icon-arrow.svg"/>
+                          </a>
+                      </li>
+                        
+                       <li>
+                        <a class="sharepageButton" href="https://www.facebook.com/sharer.php?u=https://kvalia.band" target="_parent">
+                          <img class="sharesvg"
+                            src="asset/share-to=Facebook.svg"/>
+                            <p>Share on Facebook</p>
+                            <img class="icon" src="asset/icon-arrow.svg"/>
+                          </a>
+                      </li>
+
+                      </ul>
+                    </nav>
+            </dialog>
+            </div>
+            
 </section>
   </main>
 

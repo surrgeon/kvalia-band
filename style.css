@@ -218,7 +218,6 @@ header {
   gap: 2vw;
   padding: 0;
   border-radius: 0;
-  color: white;
 }
 
 .audiomodal dialog:modal {
@@ -229,6 +228,20 @@ header {
   flex-direction: column;
   border-radius: 16px 16px 0 0;
   background-color: white;
+}
+
+.sharemodal dialog:modal {
+  padding: 0 !important;
+  margin-bottom: 0;
+  max-width: 568px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px 16px 0 0;
+  background-color: white;
+}
+
+.sharemodal nav {
+  padding: 12px;
 }
 
 .videomodal dialog:modal {
@@ -300,7 +313,7 @@ header {
   opacity: 100;
 }
 
-.openlink {
+.openlinkButton {
   cursor: pointer;
   width: auto;
   background-color: white;
@@ -317,12 +330,27 @@ header {
   justify-content: space-between;
 }
 
-.openlink .icon {
-  opacity: 32%;
-  background-color: transparent;
+.sharepageButton {
+  cursor: pointer;
+  width: auto;
+  background-color: white;
+  border-radius: 8px;
+  padding: 4px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
 }
 
-.openlink:hover, .infobutton:hover {
+.sharepageButton .icon {
+  max-width: 96px;
+}
+
+.openlinkButton:hover, .sharepageButton:hover, .infobutton:hover {
   background-color: var(--grey-5);
 }
 
@@ -355,8 +383,7 @@ header {
   border-color: transparent;
 }
 .modalvideohead .icon:hover {
-  background-color: transparent;
-  border-color: white;
+  background-color: rgba(0, 0, 0, 0.72);;
 }
 
 header .icon:hover {
@@ -388,9 +415,14 @@ header h1 {
   max-width: 96px;
 }
 
+.sharesvg {
+  padding: 8px;
+  width: 24px;
+}
+
 @media screen and (min-width: 568px) {
 
-.audiomodal dialog:modal {
+.audiomodal dialog:modal, .sharemodal dialog:modal {
   max-height: 72vh;
   max-width: 420px;
   margin-bottom: auto;
