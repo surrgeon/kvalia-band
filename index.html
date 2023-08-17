@@ -19,20 +19,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 
+    <meta property="og:site_name" content="kvalia_band"/>
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://kvalia.band" />
-    <meta property="og:title" content="Квалиа" />
+    <meta property="og:title" content="квалиа" />
+    <meta property="og:description" content="это сообщение из реальности"/>
     <meta
       property="og:image"
-      content="https://kvalia.band/media/kvalia-main_og.jpg"
+      content="https://kvalia.band/img/kvalia-band-2022-by-konstantin-krapivin.jpg"
     />
 
-    <meta name="twitter:title" content="Квалиа" />
-    <meta name="twitter:description" content="this is the message from reality" />
+    <meta name="twitter:title" content="квалиа" />
+    <meta name="twitter:description" content="это сообщение из реальности" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
-      content="https://kvalia.band/media/kvalia-main_og.jpg"
+      content="https://kvalia.band/img/kvalia-band-2022-by-konstantin-krapivin.jpg"
     />
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C49GFNER5T"></script>
@@ -42,6 +44,7 @@
       gtag('js', new Date());
       gtag('config', 'G-C49GFNER5T');
     </script>
+
     <meta name="facebook-domain-verification" content="0jgyujvfbh7ctosjem7l4ikf5vcdx5" />
   </head>
 
@@ -56,59 +59,232 @@
 
     <header>
 
-      <button id="openMainShare" onclick="window.mainShareDialog.showModal();" title="share-kvalia-band" class="icon">
+      <button id="openMainShare" onclick="window.mainShareDialog.showModal();" title="share kvalia" class="icon">
           <img src="asset/white-dots.svg"/>
       </button>
 
-      <button id="openAbout">
-          <h1>квалиа</h1> <h2 style="display: none;">kvalia</h2> 
+      <button id="openAbout" title="kvalia band">
+          <h1 class="lang-ru">квалиа</h1> <h1 class="lang-eng">kvalia</h1>
       </button>
     </header>
 
     <nav>
           <ul>
-            <li>
+            <li class="mainButton" style="position: relative;">
+              <div class="openpageButton empty" >
+
+                  <button id="shareSaadVideo" title="share 'Sun as a Dream' video" class="icon">
+                        <img src="asset/black-dots.svg"/>
+                  </button>
+              </div>
+
               <a href="#sun-as-a-dream-video">
-                <div class="openpageButton" id="openSaadVideo" title="sun-as-a-dream-video">
-                  <img class="preview" 
+                <div class="openpageButton" id="openSaadVideo" title="watch 'Sun as a Dream' video">
+                  <img class="preview"
                         src="
-                        img/sun-as-a-dream-video-2023-kvalia-small.jpg 
+                        img/sun-as-a-dream-video-2023-kvalia-small.jpg
                         "/>
-                    <p>Солнце-сон</p> 
-                    <p style="display: none;">Sun as a Dream</p>
-                      <button id="shareSaad" title="satire-and-humor-2023" class="icon">
-                        <img src="asset/black-dots.svg"/>
-                      </button>
+                    <p class="lang-ru">Солнце-сон</p>
+                    <p class="lang-eng">Sun as a Dream</p>
+
+                              <button class="icon" style="visibility: hidden; cursor: auto;">
+                                    <img src="asset/black-dots.svg"/>
+                              </button>
                 </div>
               </a>
             </li>
 
-            <li>
+            <li class="mainButton" style="position: relative;">
+
+              <div class="openpageButton empty" >
+
+                  <button id="shareSatireHumor" title="share 'Satire and Humor...' 2023" class="icon">
+                        <img src="asset/black-dots.svg"/>
+                  </button>
+              </div>
+
               <a href="#satire-and-humor-2023">
-                <div class="openpageButton" id="openSatireDialog" title="satire-and-humor-2023">
+                <div class="openpageButton" id="openSatireDialog" title="listen to 'Satire and Humor...' 2023">
                   <img class="preview"
                         src="
-                        img/satire-and-humor-2023-kvalia-cover-small.jpg 
+                        img/satire-and-humor-2023-kvalia-cover-small.jpg
                         "/>
-                    <p>Сатира и Юмор Начала XXI&nbsp;в.</p>
-                    <p style="display: none;">Satire and Humor of the Early 21st&nbsp;Century</p>
-                      <button id="shareSatire" class="icon">
+                    <p class="lang-ru">Сатира и Юмор Начала XXI&nbsp;в.</p>
+                    <p class="lang-eng">Satire and Humor of the Early 21st&nbsp;Century</p>
+                        <button class="icon" style="visibility: hidden; cursor: auto;">
+                          <img src="asset/black-dots.svg"/>
+                        </button>
+                </div>
+              </a>
+            </li>
+
+            <li class="mainButton" style="position: relative;">
+
+                  <div class="openpageButton empty" >
+
+                      <button id="shareSplit" title="share Kvalia + Prognoz Pogody split" class="icon">
+                            <img src="asset/black-dots.svg"/>
+                      </button>
+                  </div>
+
+              <a href="#split-prognoz-pogody">
+                <div class="openpageButton" id="openSplitDialog" title="Kvalia + Prognoz Pogody split tape">
+                  <img class="preview"
+                        src="
+                        img/satire-and-humor-tape-kvalia-prognoz-pogody-split-small.jpg
+                        "/>
+                    <p class="lang-ru">Квалиа + Прогноз Погоды</p>
+                    <p class="lang-eng">Kvalia + Prognoz Pogody Split&nbsp;Tape</p>
+                      <button class="icon" style="visibility: hidden; cursor: auto;">
                         <img src="asset/black-dots.svg"/>
                       </button>
                 </div>
               </a>
             </li>
 
-            <li>
-              <a href="#kvalia-prognoz-pogody-split-tape">
-                <div class="openpageButton" id="openSplitTapeDialog" title="kvalia-prognoz-pogody-split-tape">
+            <li class="mainButton" style="position: relative;">
+
+                  <div class="openpageButton empty" >
+
+                      <button id="shareGigglz" title="share Live at Gigglz 2022" class="icon">
+                            <img src="asset/black-dots.svg"/>
+                      </button>
+                  </div>
+
+              <a href="#live-at-giggls-2022">
+                <div class="openpageButton" id="openGigglzDialog" title="Live at Gigglz 2022">
                   <img class="preview"
                         src="
-                        img/satire-and-humor-tape-kvalia-prognoz-pogody-split-small.jpg 
+                        img/live-at-giggls-2022-kvalia-cover-small.jpg
                         "/>
-                    <p>Квалиа + Прогноз Погоды</p>
-                    <p style="display: none;">Kvalia + Prognoz Pogody — Split Tape</p>
-                      <button id="shareSatire" class="icon">
+                    <p class="lang-ru">Live at Gigglz</p>
+                    <p class="lang-eng">Live at Gigglz</p>
+                      <button class="icon" style="visibility: hidden; cursor: auto;">
+                        <img src="asset/black-dots.svg"/>
+                      </button>
+                </div>
+              </a>
+            </li>
+
+            <li class="mainButton" style="position: relative;">
+
+                  <div class="openpageButton empty" >
+
+                      <button id="shareDreamsVinyl"
+                              title="share Scholastic Dreams of Forceful Machines vinyl" class="icon">
+                            <img src="asset/black-dots.svg"/>
+                      </button>
+                  </div>
+
+              <a href="#scholastic-dreams-vinyl">
+                <div class="openpageButton" id="openVinylDialog" title="Scholastic Dreams of Forceful Machines vinyl">
+                  <img class="preview"
+                        src="
+                        img/kvalia-sgsm-vinyl-side-a-small.jpg
+                        "/>
+                    <p class="lang-ru">Пластинка «С.Г.С.М.»</p>
+                    <p class="lang-eng">Scholastic Dreams 12"&nbsp;45RPM&nbsp;vinyl</p>
+                      <button class="icon" style="visibility: hidden; cursor: auto;">
+                        <img src="asset/black-dots.svg"/>
+                      </button>
+                </div>
+              </a>
+            </li>
+
+            <li class="mainButton" style="position: relative;">
+
+                  <div class="openpageButton empty" >
+
+                      <button id="shareDreams"
+                              title="share Scholastic Dreams of Forceful Machines 2020" class="icon">
+                            <img src="asset/black-dots.svg"/>
+                      </button>
+                  </div>
+
+              <a href="#scholastic-dreams-2020">
+                <div class="openpageButton" id="openVinylDialog" title="Scholastic Dreams of Forceful Machines 2020">
+                  <img class="preview"
+                        src="
+                        img/kvalia-sgsm-cover-small.jpg
+                        "/>
+                    <p class="lang-ru">Схоластические Грёзы Силовых Машин</p>
+                    <p class="lang-eng">Scholastic Dreams of Forceful Machines</p>
+                      <button class="icon" style="visibility: hidden; cursor: auto;">
+                        <img src="asset/black-dots.svg"/>
+                      </button>
+                </div>
+              </a>
+            </li>
+
+            <li class="mainButton" style="position: relative;">
+
+                  <div class="openpageButton empty" >
+
+                      <button id="shareNonres"
+                              title="share 'Nonresistance' video" class="icon">
+                            <img src="asset/black-dots.svg"/>
+                      </button>
+                  </div>
+
+              <a href="#scholastic-dreams-2020">
+                <div class="openpageButton" id="openNonresVideo" title="watch 'Nonresistance' video">
+                  <img class="preview"
+                        src="
+                        img/kvalia-sgsm-cover-small.jpg
+                        "/>
+                    <p class="lang-ru">Непротивление</p>
+                    <p class="lang-eng">Noneresistance</p>
+                      <button class="icon" style="visibility: hidden; cursor: auto;">
+                        <img src="asset/black-dots.svg"/>
+                      </button>
+                </div>
+              </a>
+            </li>
+
+            <li class="mainButton" style="position: relative;">
+
+                  <div class="openpageButton empty" >
+
+                      <button id="shareNonres"
+                              title="share 'Nonresistance' video" class="icon">
+                            <img src="asset/black-dots.svg"/>
+                      </button>
+                  </div>
+
+              <a href="#scholastic-dreams-2020">
+                <div class="openpageButton" id="openNonresVideo" title="watch 'Nonresistance' video">
+                  <img class="preview"
+                        src="
+                        img/kvalia-sgsm-cover-small.jpg
+                        "/>
+                    <p class="lang-ru">MMXVI</p>
+                    <p class="lang-eng">MMXVI</p>
+                      <button class="icon" style="visibility: hidden; cursor: auto;">
+                        <img src="asset/black-dots.svg"/>
+                      </button>
+                </div>
+              </a>
+            </li>
+
+            <li class="mainButton" style="position: relative;">
+
+                  <div class="openpageButton empty" >
+
+                      <button id="shareNonres"
+                              title="share 'Nonresistance' video" class="icon">
+                            <img src="asset/black-dots.svg"/>
+                      </button>
+                  </div>
+
+              <a href="#scholastic-dreams-2020">
+                <div class="openpageButton" id="openNonresVideo" title="watch 'Nonresistance' video">
+                  <img class="preview"
+                        src="
+                        img/kvalia-sgsm-cover-small.jpg
+                        "/>
+                    <p class="lang-ru">ул. Новой Зари</p>
+                    <p class="lang-eng">Live at Novoy Zari St</p>
+                      <button class="icon" style="visibility: hidden; cursor: auto;">
                         <img src="asset/black-dots.svg"/>
                       </button>
                 </div>
@@ -120,80 +296,494 @@
 
   </article>
 
-<section class="page">
+      <section class="sharepages">
+
+                        <div class="sharemodal">
+                          <dialog id="mainShareDialog">
+                                    <div class="modalhead">
+                                        <button id="closeMainShare" onclick="window.mainShareDialog.close();">
+                                          <img class="icon" src="asset/icon-close.svg"/>
+                                        </button>
+                                        <h3 style="text-align: center;">Share Квалиа</h3>
+
+                                        <button id="" style="visibility: hidden; cursor: unset;">
+                                          <img class="icon" src="asset/icon-share.svg"/>
+                                        </button>
+                                    </div>
+
+                                <article style="margin: 0 12px 0 12px !important;">
+                                    <nav>
+                                      <ul style="gap: 4px">
+
+                                       <li>
+                                        <a class="sharepageButton" href="https://www.facebook.com/sharer.php?u=https://kvalia.band/" target="_blank">
+                                          <div class="stream"><img class="sharesvg"
+                                            src="asset/share-to=Facebook.svg"/>
+                                            <p>Share on Facebook</p>
+                                          </div>
+                                            <img class="icon" src="asset/icon-arrow.svg"/>
+                                          </a>
+                                      </li>
+
+                                       <li>
+                                        <a class="sharepageButton" href="https://twitter.com/intent/tweet?url=https://kvalia.band/&text=Квалиа" target="_blank">
+                                          <div class="stream"><img class="sharesvg"
+                                            src="asset/share-to=Twitter.svg"/>
+                                            <p>Share on Twitter</p>
+                                          </div>
+                                            <img class="icon" src="asset/icon-arrow.svg"/>
+                                          </a>
+                                      </li>
+
+                                       <li>
+                                        <a class="sharepageButton" href="https://api.whatsapp.com/send?text=https://kvalia.band/" target="_blank">
+                                          <div class="stream"><img class="sharesvg"
+                                            src="asset/share-to=WhatsApp.svg"/>
+                                            <p>Share via WhatsApp</p>
+                                          </div>
+                                            <img class="icon" src="asset/icon-arrow.svg"/>
+                                          </a>
+                                      </li>
+
+                                       <li>
+                                        <a class="sharepageButton" href="https://t.me/share/url?url=https://kvalia.band/&text=Квалиа" target="_blank">
+                                          <div class="stream"><img class="sharesvg"
+                                            src="asset/share-to=Telegram.svg"/>
+                                            <p>Share via Telegram</p>
+                                          </div>
+                                            <img class="icon" src="asset/icon-arrow.svg"/>
+                                          </a>
+                                      </li>
+
+                                           <li>
+                                            <a class="sharepageButton" href="https://www.messenger.com/new" target="_blank" rel="noopener noreferrer">
+                                              <div class="stream"><img class="sharesvg"
+                                                src="asset/share-to=Messenger.svg"/>
+                                                <p>Share via Messenger</p>
+                                              </div>
+                                                <img class="icon" src="asset/icon-arrow.svg"/>
+                                              </a>
+                                          </li>
+
+                                       <li>
+                                        <a class="sharepageButton" href="mailto:?subject=Квалиа&body=Check out Квалиа: https://kvalia.band/" target="_blank" rel="noopener noreferrer">
+                                          <div class="stream"><img class="sharesvg"
+                                            src="asset/share-to=Email.svg"/>
+                                            <p>Share via Email</p>
+                                          </div>
+                                            <img class="icon" src="asset/icon-arrow.svg"/>
+                                          </a>
+                                      </li>
+                                      </ul>
+                                    </nav>
+                                  </article>
+
+                                      <div class="copylink">
+                                        <button class="copybutton" tabindex="1" onclick="mainCopyFunction()">
+                                          <div class="stream">
+                                            <img style="width: 36px; padding: 0; margin-right: 4px; border-radius: 4px;"
+                                            src="img/kvalia-band-2022-by-konstantin-krapivin-small.jpg" />
+
+                                          <input type="text" value="https://kvalia.band" id="mainCopyLink" style="display: none;">
+                                          <h2 style="font-size: 15px; letter-spacing: -0.1px; line-height: 16px;">
+                                          https://kvalia.band/
+                                          </h2>
+                                          </div>
+                                          <h2 id="main-link-copy" style="padding: 8px; text-align: right;">
+                                          Copy</h2>
+                                          <h2 id="main-link-copied" style="padding: 8px; text-align: right; color: limegreen; display: none;">
+                                          Copied</h2>
+                                        </button>
+                                      </div>
+                          </dialog>
+                        </div>
+
+              </section>
+
+<section class="pages">
+
+
+    <!--  Солнце-сон -->
+
+            <div class="sharemodal">
+
+                <dialog id="saadShareDialog">
+                          <div class="modalhead">
+                              <button id="closeSaadShare" onclick="window.saadShareDialog.close();">
+                                <img class="icon" src="asset/icon-close.svg"/>
+                              </button>
+                              <h3 style="text-align: center;">Share this link</h3>
+
+                              <button id="" style="visibility: hidden; cursor: unset;">
+                                <img class="icon" src="asset/icon-share.svg"/>
+                              </button>
+                          </div>
+
+                      <article style="margin: 0 12px 0 12px !important;">
+                          <nav>
+                            <ul style="gap: 4px">
+
+                             <li>
+                              <a class="sharepageButton" href="https://www.facebook.com/sharer.php?u=https://kvalia.band/#satire-and-humor-2023" target="_blank">
+                                <div class="stream"><img class="sharesvg"
+                                  src="asset/share-to=Facebook.svg"/>
+                                  <p>Share on Facebook</p>
+                                </div>
+                                  <img class="icon" src="asset/icon-arrow.svg"/>
+                                </a>
+                            </li>
+
+                             <li>
+                              <a class="sharepageButton" href="https://twitter.com/intent/tweet?url=https://kvalia.band/#satire-and-humor-2023&text=Квалиа Прогноз Погоды — Сатира и Юмор Начала XXI в. 2023" target="_blank">
+                                <div class="stream"><img class="sharesvg"
+                                  src="asset/share-to=Twitter.svg"/>
+                                  <p>Share on Twitter</p>
+                                </div>
+                                  <img class="icon" src="asset/icon-arrow.svg"/>
+                                </a>
+                            </li>
+
+                             <li>
+                              <a class="sharepageButton" href="https://api.whatsapp.com/send?text=https://kvalia.band/#satire-and-humor-2023" target="_blank">
+                                <div class="stream"><img class="sharesvg"
+                                  src="asset/share-to=WhatsApp.svg"/>
+                                  <p>Share via WhatsApp</p>
+                                </div>
+                                  <img class="icon" src="asset/icon-arrow.svg"/>
+                                </a>
+                            </li>
+
+                             <li>
+                              <a class="sharepageButton" href="https://t.me/share/url?url=https://kvalia.band/#satire-and-humor-2023&text=Квалиа Прогноз Погоды — Сатира и Юмор Начала XXI в. 2023" target="_blank">
+                                <div class="stream"><img class="sharesvg"
+                                  src="asset/share-to=Telegram.svg"/>
+                                  <p>Share via Telegram</p>
+                                </div>
+                                  <img class="icon" src="asset/icon-arrow.svg"/>
+                                </a>
+                            </li>
+
+                                 <li>
+                                  <a class="sharepageButton" href="https://www.messenger.com/new" target="_blank" rel="noopener noreferrer">
+                                    <div class="stream"><img class="sharesvg"
+                                      src="asset/share-to=Messenger.svg"/>
+                                      <p>Share via Messenger</p>
+                                    </div>
+                                      <img class="icon" src="asset/icon-arrow.svg"/>
+                                    </a>
+                                </li>
+
+                             <li>
+                              <a class="sharepageButton" href="mailto:?subject=Сатира и Юмор Начала XXI в.&body=Listen to Квалиа Прогноз Погоды — Сатира и Юмор Начала XXI в. 2023: https://kvalia.band/#satire-and-humor-2023" target="_blank" rel="noopener noreferrer">
+                                <div class="stream"><img class="sharesvg"
+                                  src="asset/share-to=Email.svg"/>
+                                  <p>Share via Email</p>
+                                </div>
+                                  <img class="icon" src="asset/icon-arrow.svg"/>
+                                </a>
+                            </li>
+                            </ul>
+                          </nav>
+                        </article>
+
+                            <div class="copylink">
+                              <button class="copybutton" tabindex="1" onclick="saadCopyFunction()">
+                                <div class="stream">
+                                  <img style="width: 36px; padding: 0; margin-right: 8px; border-radius: 4px;"
+                                  src="img/sun-as-a-dream-video-2023-kvalia-small.jpg" />
+
+                                <input type="text" value="kvalia.band/#sun-as-a-dream-video" id="saadCopyLink" style="display: none;">
+                                <h2 style="font-size: 14px; letter-spacing: -0.2px; line-height: 16px;">
+                                kvalia.band/<br>#sun-as-a-dream-video
+                                </h2>
+                                </div>
+                                <h2 id="saad-link-copy" style="padding: 8px; text-align: right;">
+                                Copy</h2>
+                                <h2 id="saad-link-copied" style="padding: 8px; text-align: right; color: limegreen; display: none;">
+                                Copied</h2>
+                              </button>
+                            </div>
+                </dialog>
+              </div>
 
             <div class="videomodal">
-            <dialog id="saadVideoDialog">
-                    <div class="modalvideohead">
-                <button id="closeSaadDialog" class="icon">
-                <img src="asset/white-close.svg"/>
-                 </button>
+
+              <dialog id="saadVideoDialog">
+                      <div class="modalvideohead">
+                        <button id="closeSaadDialog" class="icon">
+                        <img src="asset/white-close.svg"/>
+                         </button>
+                      </div>
+
+                  <iframe class="videoembed" width="100%" height="100%"
+                  src="https://www.youtube-nocookie.com/embed/0epXAKND7GE?autoplay=1&mute=1"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                  allowfullscreen="" loading="lazy">
+                  </iframe>
+              </dialog>
+            </div>
+
+
+    <!--  Сатира и Юмор -->
+
+                <div class="sharemodal">
+                  <dialog id="satireShareDialog">
+                            <div class="modalhead">
+                                <button id="closeSaadShare" onclick="window.satireShareDialog.close();">
+                                  <img class="icon" src="asset/icon-close.svg"/>
+                                </button>
+                                <h3 style="text-align: center;">Share this link</h3>
+
+                                <button id="" style="visibility: hidden; cursor: unset;">
+                                  <img class="icon" src="asset/icon-share.svg"/>
+                                </button>
+                            </div>
+
+                        <article style="margin: 0 12px 0 12px !important;">
+                            <nav>
+                              <ul style="gap: 4px">
+
+                               <li>
+                                <a class="sharepageButton" href="https://www.facebook.com/sharer.php?u=https://kvalia.band/#satire-and-humor-2023" target="_blank">
+                                  <div class="stream"><img class="sharesvg"
+                                    src="asset/share-to=Facebook.svg"/>
+                                    <p>Share on Facebook</p>
+                                  </div>
+                                    <img class="icon" src="asset/icon-arrow.svg"/>
+                                  </a>
+                              </li>
+
+                               <li>
+                                <a class="sharepageButton" href="https://twitter.com/intent/tweet?url=https://kvalia.band/#satire-and-humor-2023&text=Квалиа Прогноз Погоды — Сатира и Юмор Начала XXI в. 2023" target="_blank">
+                                  <div class="stream"><img class="sharesvg"
+                                    src="asset/share-to=Twitter.svg"/>
+                                    <p>Share on Twitter</p>
+                                  </div>
+                                    <img class="icon" src="asset/icon-arrow.svg"/>
+                                  </a>
+                              </li>
+
+                               <li>
+                                <a class="sharepageButton" href="https://api.whatsapp.com/send?text=https://kvalia.band/#satire-and-humor-2023" target="_blank">
+                                  <div class="stream"><img class="sharesvg"
+                                    src="asset/share-to=WhatsApp.svg"/>
+                                    <p>Share via WhatsApp</p>
+                                  </div>
+                                    <img class="icon" src="asset/icon-arrow.svg"/>
+                                  </a>
+                              </li>
+
+                               <li>
+                                <a class="sharepageButton" href="https://t.me/share/url?url=https://kvalia.band/#satire-and-humor-2023&text=Квалиа Прогноз Погоды — Сатира и Юмор Начала XXI в. 2023" target="_blank">
+                                  <div class="stream"><img class="sharesvg"
+                                    src="asset/share-to=Telegram.svg"/>
+                                    <p>Share via Telegram</p>
+                                  </div>
+                                    <img class="icon" src="asset/icon-arrow.svg"/>
+                                  </a>
+                              </li>
+
+                                   <li>
+                                    <a class="sharepageButton" href="https://www.messenger.com/new" target="_blank" rel="noopener noreferrer">
+                                      <div class="stream"><img class="sharesvg"
+                                        src="asset/share-to=Messenger.svg"/>
+                                        <p>Share via Messenger</p>
+                                      </div>
+                                        <img class="icon" src="asset/icon-arrow.svg"/>
+                                      </a>
+                                  </li>
+
+                               <li>
+                                <a class="sharepageButton" href="mailto:?subject=Сатира и Юмор Начала XXI в.&body=Listen to Квалиа Прогноз Погоды — Сатира и Юмор Начала XXI в. 2023: https://kvalia.band/#satire-and-humor-2023" target="_blank" rel="noopener noreferrer">
+                                  <div class="stream"><img class="sharesvg"
+                                    src="asset/share-to=Email.svg"/>
+                                    <p>Share via Email</p>
+                                  </div>
+                                    <img class="icon" src="asset/icon-arrow.svg"/>
+                                  </a>
+                              </li>
+                              </ul>
+                            </nav>
+                          </article>
+
+                              <div class="copylink">
+                                <button class="copybutton" tabindex="1" onclick="satireCopyFunction()">
+                                  <div class="stream">
+                                    <img style="width: 36px; padding: 0; margin-right: 8px; border-radius: 4px;"
+                                    src="img/satire-and-humor-2023-kvalia-cover-small.jpg" />
+
+                                  <input type="text" value="kvalia.band/#satire-and-humor-2023" id="satireCopyLink" style="display: none;">
+                                  <h2 style="font-size: 14px; letter-spacing: -0.2px; line-height: 16px;">
+                                  kvalia.band/<br>#satire-and-humor-2023
+                                  </h2>
+                                  </div>
+                                  <h2 id="satire-link-copy" style="padding: 8px; text-align: right;">
+                                  Copy</h2>
+                                  <h2 id="satire-link-copied" style="padding: 8px; text-align: right; color: limegreen; display: none;">
+                                  Copied</h2>
+                                </button>
+                              </div>
+                  </dialog>
                 </div>
 
-            <iframe class="videoembed" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/0epXAKND7GE?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+                <div class="audiomodal">
+                  <dialog id="satireHumorDialog">
+                      <div class="modalhead">
+                          <button id="closeSatireDialog">
+                            <img class="icon" src="asset/icon-close.svg"/>
+                          </button>
+                          <h3 style="text-align: center;">Сатира и Юмор Начала XXI&nbsp;в.</h3>
+                          <button id="shareSatireHumor" onclick="window.satireShareDialog.showModal();">
+                            <img class="icon" src="asset/icon-share.svg"/>
+                          </button>
+                        </div>
 
-            </iframe>
-            </dialog>
-            </div>
-  
-                  <div class="audiomodal">
-                <dialog id="satireHumorDialog">
+                        <object type="text/html"
+                          data="satire-and-humor-of-the-early-21st-centiry-2023.html">
+                          </object>
+                  </dialog>
+              </div>
+
+
+        <!--  Сплит Кассета -->
+              <div class="sharemodal">
+                <dialog id="splitShareDialog">
+                          <div class="modalhead">
+                              <button id="closeSplitShare" onclick="window.splitShareDialog.close();">
+                                <img class="icon" src="asset/icon-close.svg"/>
+                              </button>
+                              <h3 style="text-align: center;">Share this link</h3>
+
+                              <button id="" style="visibility: hidden; cursor: unset;">
+                                <img class="icon" src="asset/icon-share.svg"/>
+                              </button>
+                          </div>
+
+                      <article style="margin: 0 12px 0 12px !important;">
+                          <nav>
+                            <ul style="gap: 4px">
+
+                             <li>
+                              <a class="sharepageButton" href="https://www.facebook.com/sharer.php?u=https://kvalia.band/#split-prognoz-pogody" target="_blank">
+                                <div class="stream"><img class="sharesvg"
+                                  src="asset/share-to=Facebook.svg"/>
+                                  <p>Share on Facebook</p>
+                                </div>
+                                  <img class="icon" src="asset/icon-arrow.svg"/>
+                                </a>
+                            </li>
+
+                             <li>
+                              <a class="sharepageButton" href="https://twitter.com/intent/tweet?url=https://kvalia.band/#split-prognoz-pogody&text=Квалиа + Прогноз Погоды" target="_blank">
+                                <div class="stream"><img class="sharesvg"
+                                  src="asset/share-to=Twitter.svg"/>
+                                  <p>Share on Twitter</p>
+                                </div>
+                                  <img class="icon" src="asset/icon-arrow.svg"/>
+                                </a>
+                            </li>
+
+                             <li>
+                              <a class="sharepageButton" href="https://api.whatsapp.com/send?text=https://kvalia.band/#split-prognoz-pogody" target="_blank">
+                                <div class="stream"><img class="sharesvg"
+                                  src="asset/share-to=WhatsApp.svg"/>
+                                  <p>Share via WhatsApp</p>
+                                </div>
+                                  <img class="icon" src="asset/icon-arrow.svg"/>
+                                </a>
+                            </li>
+
+                             <li>
+                              <a class="sharepageButton" href="https://t.me/share/url?url=https://kvalia.band/#split-prognoz-pogody&text=Квалиа + Прогноз Погоды" target="_blank">
+                                <div class="stream"><img class="sharesvg"
+                                  src="asset/share-to=Telegram.svg"/>
+                                  <p>Share via Telegram</p>
+                                </div>
+                                  <img class="icon" src="asset/icon-arrow.svg"/>
+                                </a>
+                            </li>
+
+                                 <li>
+                                  <a class="sharepageButton" href="https://www.messenger.com/new" target="_blank" rel="noopener noreferrer">
+                                    <div class="stream"><img class="sharesvg"
+                                      src="asset/share-to=Messenger.svg"/>
+                                      <p>Share via Messenger</p>
+                                    </div>
+                                      <img class="icon" src="asset/icon-arrow.svg"/>
+                                    </a>
+                                </li>
+
+                             <li>
+                              <a class="sharepageButton" href="mailto:?subject=Квалиа + Прогноз Погоды&body=Check out Квалиа + Прогноз Погоды: https://kvalia.band/#split-prognoz-pogody" target="_blank" rel="noopener noreferrer">
+                                <div class="stream"><img class="sharesvg"
+                                  src="asset/share-to=Email.svg"/>
+                                  <p>Share via Email</p>
+                                </div>
+                                  <img class="icon" src="asset/icon-arrow.svg"/>
+                                </a>
+                            </li>
+                            </ul>
+                          </nav>
+                        </article>
+
+                            <div class="copylink">
+                              <button class="copybutton" tabindex="1" onclick="splitCopyFunction()">
+                                <div class="stream">
+                                  <img style="width: 36px; padding: 0; margin-right: 8px; border-radius: 4px;"
+                                  src="img/satire-and-humor-tape-kvalia-prognoz-pogody-split-small.jpg" />
+
+                                <input type="text" value="kvalia.band/#split-prognoz-pogody" id="splitCopyLink" style="display: none;">
+                                <h2 style="font-size: 14px; letter-spacing: -0.2px; line-height: 16px;">
+                                kvalia.band/<br>#split-prognoz-pogody
+                                </h2>
+                                </div>
+                                <h2 id="split-link-copy" style="padding: 8px; text-align: right;">
+                                Copy</h2>
+                                <h2 id="split-link-copied" style="padding: 8px; text-align: right; color: limegreen; display: none;">
+                                Copied</h2>
+                              </button>
+                            </div>
+                </dialog>
+              </div>
+
+              <div class="audiomodal">
+                <dialog id="splitDialog">
                     <div class="modalhead">
-                        <button id="closeSatireDialog">
+                        <button id="closeSplitDialog">
                           <img class="icon" src="asset/icon-close.svg"/>
                         </button>
-                        <h3 style="text-align: center;">Сатира и Юмор Начала XXI&nbsp;в.</h3>
-                        <button id="shareSatire">
+                        <h3 style="text-align: center;">Квалиа + Прогноз Погоды</h3>
+                        <button id="shareSplit" onclick="window.splitShareDialog.showModal();">
                           <img class="icon" src="asset/icon-share.svg"/>
                         </button>
                       </div>
 
-                <object type="text/html" 
-                        data="satire-and-humor-of-the-early-21st-centiry-2023.html">
+                      <object type="text/html"
+                        data="kvalia-prognoz-pogody-split-tape.html">
                         </object>
                 </dialog>
-                      </div>
+              </div>
 
+      <!--  Live @ Gigglz -->
 
-            <div class="sharemodal">
-            <dialog id="mainShareDialog">
+              <div class="audiomodal">
+                <dialog id="liveGigglzDialog">
                     <div class="modalhead">
-                        <button id="closeMainShare" onclick="window.mainShareDialog.close();">
+                        <button id="closeGigglzDialog">
                           <img class="icon" src="asset/icon-close.svg"/>
                         </button>
-                        <h3 style="text-align: center;">Share this link</h3>
-
-                        <button id="">
-                          <img class="icon" style="visibility: hidden;" src="asset/icon-share.svg"/>
+                        <h3 style="text-align: center;">Квалиа + Прогноз Погоды</h3>
+                        <button id="shareGigglz" onclick="window.gigglzShareDialog.showModal();">
+                          <img class="icon" src="asset/icon-share.svg"/>
                         </button>
-                    </div>
+                      </div>
 
-                    <nav>
-                      <ul>
-                        
-                       <li>
-                        <a class="sharepageButton" href="snapchat://creativeKitWeb/camera/1?attachmentUrl=https://kvalia.band" target="_parent">
-                          <img class="sharesvg"
-                            src="asset/share-to=Snapchat.svg"/>
-                            <p>Share on Snapchat</p>
-                            <img class="icon" src="asset/icon-arrow.svg"/>
-                          </a>
-                      </li>
-                        
-                       <li>
-                        <a class="sharepageButton" href="https://www.facebook.com/sharer.php?u=https://kvalia.band" target="_parent">
-                          <img class="sharesvg"
-                            src="asset/share-to=Facebook.svg"/>
-                            <p>Share on Facebook</p>
-                            <img class="icon" src="asset/icon-arrow.svg"/>
-                          </a>
-                      </li>
-
-                      </ul>
-                    </nav>
-            </dialog>
-            </div>
-            
+                      <object type="text/html"
+                        data="live-at-gigglz-2022.html">
+                        </object>
+                </dialog>
+              </div>
 </section>
   </main>
 
@@ -203,34 +793,79 @@
         document.body.classList.add("loaded");
       };
 
+      /* Поделиться главной страницей */
+      var openMainShare = document.getElementById('openMainShare');
+      var mainShareDialog = document.getElementById('mainShareDialog');
+
+          openMainShare.addEventListener('click', function () {
+          if (typeof openMainShare.showModal === "function") {
+          openMainShare.showModal();
+          } else {
+          console.log("The <dialog> API is not supported by this browser");
+          }
+          });
+
+      mainShareDialog.addEventListener('click', ({target:mainShareDialog}) => {
+      if (mainShareDialog.nodeName === 'DIALOG') {
+      mainShareDialog.close('dismiss')
+      }
+      })
+
       /* Солнце-сон */
 
-    var openSaadVideo = document.getElementById('openSaadVideo');
-    var saadVideoDialog = document.getElementById('saadVideoDialog');
+      var shareSaadVideo = document.getElementById('shareSaadVideo');
+      var saadShareDialog = document.getElementById('saadShareDialog');
+      var openSaadVideo = document.getElementById('openSaadVideo');
+      var saadVideoDialog = document.getElementById('saadVideoDialog');
 
-    openSaadVideo.addEventListener('click', function () {
-    if (typeof saadVideoDialog.showModal === "function") {
-    saadVideoDialog.showModal();
-    } else {
-    console.log("The <dialog> API is not supported by this browser");
-    }
-    });
+            shareSaadVideo.addEventListener('click', function () {
+            if (typeof saadShareDialog.showModal === "function") {
+            saadShareDialog.showModal();
+            } else {
+            console.log("The <dialog> API is not supported by this browser");
+            }
+            });
 
-    saadVideoDialog.addEventListener('click', ({target:saadVideoDialog}) => {
-    if (saadVideoDialog.nodeName === 'DIALOG') {
-    saadVideoDialog.close('dismiss')
-    }
-    })
+      openSaadVideo.addEventListener('click', function () {
+      if (typeof saadVideoDialog.showModal === "function") {
+      saadVideoDialog.showModal();
+      } else {
+      console.log("The <dialog> API is not supported by this browser");
+      }
+      });
 
-    closeSaadDialog.addEventListener('click', function() {
-    saadVideoDialog.close();
+      saadVideoDialog.addEventListener('click', ({target:saadVideoDialog}) => {
+      if (saadVideoDialog.nodeName === 'DIALOG') {
+      saadVideoDialog.close('dismiss')
+      }
+      })
+      saadShareDialog.addEventListener('click', ({target:saadShareDialog}) => {
+      if (saadShareDialog.nodeName === 'DIALOG') {
+      saadShareDialog.close('dismiss')
+      }
+      })
 
-    })
+      closeSaadDialog.addEventListener('click', function() {
+      saadVideoDialog.close();
+
+      })
+
 
       /* Сатира и Юмор */
 
+    var shareSatireHumor = document.getElementById('shareSatireHumor');
     var openSatireDialog = document.getElementById('openSatireDialog');
     var satireHumorDialog = document.getElementById('satireHumorDialog');
+    var satireShareDialog = document.getElementById('satireShareDialog');
+    var closeSatireDialog = document.getElementById('closeSatireDialog');
+
+          shareSatireHumor.addEventListener('click', function () {
+          if (typeof satireShareDialog.showModal === "function") {
+          satireShareDialog.showModal();
+          } else {
+          console.log("The <dialog> API is not supported by this browser");
+          }
+          });
 
     openSatireDialog.addEventListener('click', function () {
     if (typeof satireHumorDialog.showModal === "function") {
@@ -246,19 +881,132 @@
     }
     })
 
+    satireShareDialog.addEventListener('click', ({target:satireShareDialog}) => {
+    if (satireShareDialog.nodeName === 'DIALOG') {
+    satireShareDialog.close('dismiss')
+    }
+    })
+
     closeSatireDialog.addEventListener('click', function() {
     satireHumorDialog.close();
 
     })
 
-    /* ---- */
 
-    if(window.location.hash == "#sun-as-a-dream-video") {
-    saadVideoDialog.showModal();  // Показать окно
+          /* Сплит Кассета */
+
+        var shareSplit = document.getElementById('shareSplit');
+        var openSplitDialog = document.getElementById('openSplitDialog');
+        var splitDialog = document.getElementById('splitDialog');
+        var splitShareDialog = document.getElementById('splitShareDialog');
+
+              shareSplit.addEventListener('click', function () {
+              if (typeof splitShareDialog.showModal === "function") {
+              splitShareDialog.showModal();
+              } else {
+              console.log("The <dialog> API is not supported by this browser");
+              }
+              });
+
+        openSplitDialog.addEventListener('click', function () {
+        if (typeof splitDialog.showModal === "function") {
+        splitDialog.showModal();
+        } else {
+        console.log("The <dialog> API is not supported by this browser");
+        }
+        });
+
+        splitDialog.addEventListener('click', ({target:splitDialog}) => {
+        if (splitDialog.nodeName === 'DIALOG') {
+        splitDialog.close('dismiss')
+        }
+        })
+
+        splitShareDialog.addEventListener('click', ({target:splitShareDialog}) => {
+        if (splitShareDialog.nodeName === 'DIALOG') {
+        splitShareDialog.close('dismiss')
+        }
+        })
+
+        closeSplitDialog.addEventListener('click', function() {
+        splitDialog.close();
+
+        })
+
+    /* — Copy Links — */
+    function mainCopyFunction() {
+      var copyText = document.getElementById("mainCopyLink");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(copyText.value);
+
+      document.getElementById("main-link-copied").style.display = "block";
+      document.getElementById("main-link-copy").style.display = "none";
+      setTimeout(function() {
+      document.getElementById("main-link-copied").style.display = "none";
+      document.getElementById("main-link-copy").style.display = "block";
+      }, 777);
     }
-    if(window.location.hash == "#satire-and-humor-2023") {
-    satireHumorDialog.showModal(); 
+
+    function saadCopyFunction() {
+      var copyText = document.getElementById("saadCopyLink");
+      // Select the text field
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(copyText.value);
+
+      document.getElementById("saad-link-copied").style.display = "block";
+      document.getElementById("saad-link-copy").style.display = "none";
+      setTimeout(function() {
+      document.getElementById("saad-link-copied").style.display = "none";
+      document.getElementById("saad-link-copy").style.display = "block";
+      }, 777);
     }
+
+    function satireCopyFunction() {
+      var copyText = document.getElementById("satireCopyLink");
+      // Select the text field
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(copyText.value);
+
+      document.getElementById("satire-link-copied").style.display = "block";
+      document.getElementById("satire-link-copy").style.display = "none";
+      setTimeout(function() {
+      document.getElementById("satire-link-copied").style.display = "none";
+      document.getElementById("satire-link-copy").style.display = "block";
+      }, 777);
+    }
+
+    function splitCopyFunction() {
+      var copyText = document.getElementById("splitCopyLink");
+      // Select the text field
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(copyText.value);
+
+      document.getElementById("split-link-copied").style.display = "block";
+      document.getElementById("split-link-copy").style.display = "none";
+      setTimeout(function() {
+      document.getElementById("split-link-copied").style.display = "none";
+      document.getElementById("split-link-copy").style.display = "block";
+      }, 777);
+    }
+
+        /* ---- */
+
+        if(window.location.hash == "#sun-as-a-dream-video") {
+        saadVideoDialog.close();  // Показать окно
+        }
+        if(window.location.hash == "#satire-and-humor-2023") {
+        satireHumorDialog.showModal();
+        }
+        if(window.location.hash == "#split-prognoz-pogody") {
+        splitDialog.showModal();
+        }
+        if(window.location.hash == "#live-at-gigglz-2022") {
+        gigglzDialog.showModal();
+        }
 
 
     </script>

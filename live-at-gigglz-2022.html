@@ -61,101 +61,76 @@
     </script>
   </head>
 
-  <body>
-
+  <body style="background: none; background-color: white;">
 
     <div class="preloader">
-      <img src="loader.svg" style="width: 64px; height: 64px;"/>
+      <img src="loader.svg" style="width: 16vw; height: 16vw;"/>
     </div>
 
-    <div style="width: 100%;">
-              <a href="/">
-              <img class="logo" src="media/logo.svg" style="width: 64px; height: 64px;"/></a>
-    </div>
+<article style="margin: 2vw 6vw 32vw 6vw !important;">
 
-      <main>
+        <div>
+            <img
+            src="img/live-at-giggls-2022-kvalia-cover.jpg"
+            class="coverembed"
+            />
+        </div>
 
-        <article class="kvalia release">
-
-          <section class="sticky small" style="visibility: hidden;">
-            <h1>Квалиа в Гигглз</h1>
-          </section>
-          <section class="sticky small">
-            <h1>Live at Gigglz</h1>
-          </section>
-
-          <section class="small"></section>
-          <section class="sticky small" >
-          <img
-            class="cover"
-            style="width: 100%;"
-            src="media/release_gigglz-2022.jpg"
-            alt="scholastic dreams of forceful machines cover"
-          />
-          </section>
-
-          <section class="sticky small">
-            <ol> 
+        <nav>
+          <ul>
+            <p style="opacity: 50%; padding-bottom: 12px;">Avaliable to stream here</p>
             <li>
-                  00:18&ensp;Непротивление 
-            </li>
-            <li>
-                  03:12&ensp;Супердоум
-            </li>
-            <li>
-                  05:12&ensp;Комедия
-            </li>
-          </ol>
-        </section>
 
-          <section class="sticky small">
-            <ol> 
-            <li>
-                  00:18&ensp;Nonresistance 
+                <a class="openlinkButton" href="https://open.spotify.com/album/1fJy4KoXEMoTl18ue1reSC?utm_campaign=com.app" target="_parent">
+                <div class="stream"><img class="streamsvg"
+                  src="asset/go-to=Soundcloud.svg"/>
+                  <p>Soundcloud</p>
+                </div>
+                  <img class="icon" src="asset/icon-go.svg"/>
+                </a>
             </li>
-            <li>
-                  03:12&ensp;Superdome
-            </li>
-            <li>
-                  05:12&ensp;Comedy
-            </li>
-          </ol>          
-        </section>
 
-          <section class="sticky small">
-          </section>
+            <p
+              style="opacity: 50%; padding-bottom: 12px; padding-top: 16px; line-height: 24px;"
+            >
+                          The first Kvalia live show in Georgia<br>
+                          No professional recording<br>
+                          All songs are combined into one track<br>
+                          Total Playing Time: 10:00<br><br>
 
-          <section class="sticky small">
-            <p>
-              recorded 17 April 2022 at Batumi Georgia<br>
-              released 28 April 2022<br><br>
+              Recorded 17 April 2022 at Batumi Georgia <br>
+              Released 28 April 2022
 
-              The first Kvalia live show in Georgia. No professional recording. All songs are combined into one track. Total playing time: 10:00<br><br>
-
-              Bass Guitar – Mikhail Tsirikov <br>
-              Drum Machine, Sampler, Voice – Aleksander Maznichenko<br><br>
-              Photography by Marina Leonteva
-              
             </p>
-          </section>
 
-      </article>
+          </ul>
+        </nav>
 
-        <section class="links" style="width: 100%;">
-          <div class="link">
-            Available only at 
-            <a href="https://soundcloud.com/siberian-supreme/kvalia-live-gigglz/">
-                Soundcloud
-            </a>
-            </div>
-        </section>
-
-      </main>
+</article>
 
     <script>
       window.onload = function () {
         document.body.classList.add("loaded");
       };
+
+      /* ——— */
+      function showMoreFunction() {
+      document.getElementById("hideInfoButt").style.display = "block";
+      document.getElementById("showInfoButt").style.display = "none";
+      var info = document.getElementsByClassName('moreinfo');
+      for (var i = 0; i < info.length; i ++) {
+          info[i].style.display = 'block';
+      }
+      }
+      function showLessFunction() {
+      document.getElementById("hideInfoButt").style.display = "none";
+      document.getElementById("showInfoButt").style.display = "block";
+      var info = document.getElementsByClassName('moreinfo');
+      for (var i = 0; i < info.length; i ++) {
+          info[i].style.display = 'none';
+      }
+      }
     </script>
+
   </body>
 </html>

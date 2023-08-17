@@ -64,19 +64,22 @@
     <div class="preloader">
       <img src="loader.svg" style="width: 16vw; height: 16vw;"/>
     </div>
-        
+
 <article style="margin: 2vw 6vw 32vw 6vw !important;">
 
         <div>
-            <iframe class="audioembed" src="https://open.spotify.com/embed/album/1fJy4KoXEMoTl18ue1reSC?utm_source=generator" width="100%" height="352px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-              
+            <iframe class="audioembed"
+            src="https://open.spotify.com/embed/album/1fJy4KoXEMoTl18ue1reSC?utm_source=generator"
+            width="100%" height="352px" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
             </iframe>
             </div>
 
         <nav>
           <ul>
             <p style="opacity: 50%; padding-bottom: 12px;">Avaliable to stream here</p>
-            <li> 
+            <li>
 
                 <a class="openlinkButton" href="https://open.spotify.com/album/1fJy4KoXEMoTl18ue1reSC?utm_campaign=com.app" target="_parent">
                 <div class="stream"><img class="streamsvg"
@@ -96,7 +99,7 @@
                       <img class="icon" src="asset/icon-go.svg"/>
                 </a>
             </li>
-            
+
             <li>
               <a class="openlinkButton" href="https://apple.co/3pVj5th" target="_parent">
                 <div class="stream"><img class="streamsvg"
@@ -127,8 +130,7 @@
                 </a>
             </li>
 
-          <div class="moreinfo">
-            <li>
+            <li id="more-info" class="moreinfo">
               <a class="openlinkButton" href="https://listen.tidal.com/album/269270237" target="_parent">
                 <div class="stream"><img class="streamsvg"
                   src="asset/go-to=Tidal.svg"/>
@@ -138,7 +140,7 @@
                 </a>
             </li>
 
-            <li>
+            <li class="moreinfo">
               <a class="openlinkButton" href="https://music.youtube.com/playlist?list=OLAK5uy_mcZaaApdAy3TGGaenA5_NlBe2Z-CGWXP8" target="_parent">
                 <div class="stream"><img class="streamsvg"
                   src="asset/go-to=YouTubeMusic.svg"/>
@@ -148,7 +150,7 @@
                 </a>
             </li>
 
-            <li>
+            <li class="moreinfo">
               <a class="openlinkButton" href="https://www.pandora.com/artist/kvalia-and-prognoz-pogody/satira-i-iumor-nachala-xxi-5/ALt99z9VtcJmXq9" target="_parent">
                 <div class="stream"><img class="streamsvg"
                   src="asset/go-to=Pandora.svg"/>
@@ -159,32 +161,30 @@
             </li>
 
 
-            <p style="opacity: 50%; padding-bottom: 12px;">Release info</p>
-
-              <p>released February 21 2023 <br><br>
-
-              Split-album by Siberian post-punk renegades Kvalia and Prognoz Pogody. Recorded in Kakheti and St. Petersburg in 2022<br><br>
-
-              Kvalia — Aleksander Maznichenko and Mikhail Tsirikov featuring Alisa Valiulina (2) and Aleksey Danilenko (4)<br><br>
-
-              Prognoz Pogody — Andrey Lyubchenko and Mikhail Lyubchenko<br><br>
-
-              One side mixed by Pavel Eremeev, another by Andrey Lyubchenko
-              <br><br>
-
-              Mastered by&nbsp;Pavel Eremeev<br>
-              Artwork by&nbsp;Marina Leonteva
+            <p class="moreinfo"
+              style="opacity: 50%; padding-bottom: 12px; padding-top: 16px; line-height: 24px;"
+            >
+              Recorded in Kakheti and St. Petersburg in 2022<br>
+              Released February 21 2023
             </p>
-          </div>
+
           </ul>
         </nav>
 
           <div class="modalfoot">
-            <div class="infobutton">
+            <a href="#more-info"
+              <button id="showInfoButt" onclick="showMoreFunction()" class="infobutton" style="width: 88%;">
+                <h3 style="text-align: center;">
+                Show more
+                </h3>
+              </button>
+            </a>
+
+            <button id="hideInfoButt" onclick="showLessFunction()" class="infobutton moreinfo" style="width: 88%;">
               <h3 style="text-align: center;">
-              Show more
+              Show less
               </h3>
-            </div>
+            </button>
           </div>
 
 </article>
@@ -193,6 +193,24 @@
       window.onload = function () {
         document.body.classList.add("loaded");
       };
+
+      /* ——— */
+      function showMoreFunction() {
+      document.getElementById("hideInfoButt").style.display = "block";
+      document.getElementById("showInfoButt").style.display = "none";
+      var info = document.getElementsByClassName('moreinfo');
+      for (var i = 0; i < info.length; i ++) {
+          info[i].style.display = 'block';
+      }
+      }
+      function showLessFunction() {
+      document.getElementById("hideInfoButt").style.display = "none";
+      document.getElementById("showInfoButt").style.display = "block";
+      var info = document.getElementsByClassName('moreinfo');
+      for (var i = 0; i < info.length; i ++) {
+          info[i].style.display = 'none';
+      }
+      }
     </script>
 
   </body>

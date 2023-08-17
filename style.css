@@ -41,7 +41,7 @@ body {
   font-weight: 500;
   overflow: hidden;
 
-  background: url(img/kvalia-band-2022-by-konstantin-krapivin.jpg) no-repeat center center fixed; 
+  background: url(img/kvalia-band-2022-by-konstantin-krapivin.jpg) no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -63,7 +63,7 @@ article {
   transition: 0.3s;
 }
 
-article.page {
+article.pages, article.sharepages  {
   margin: 16vw 2vw !important;
   background-color: white;
   align-items: center;
@@ -82,7 +82,7 @@ button {
   color: transparent;
   background-color: transparent;
   border-style: none;
-  border-width: none;
+  border-width: 0 0 0 0;
   padding: 0;
 }
 
@@ -170,7 +170,7 @@ a {
 
 ol,
 ul,
-li, 
+li,
 p {
   margin-block-start: 0 !important;
   margin-block-end: 0 !important;
@@ -193,10 +193,13 @@ header {
   color: white;
 }
 
+.lang-ru {
+  display: none;
+}
+
 .modalhead {
-  position: sticky; 
-  top: 0; 
-  z-index: 9000;
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -208,9 +211,8 @@ header {
 }
 
 .modalvideohead {
-  position: sticky; 
+  position: sticky;
   top: 0; margin-bottom: 16px;
-  z-index: 9000;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -258,6 +260,10 @@ header {
   background-color: rgba(0, 0, 0, 0.72);
 }
 
+.sharemodal dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.32);
+}
+
 .modalfoot {
   position: fixed;
   bottom: 0px;
@@ -270,6 +276,15 @@ header {
   border-top: 0.75px solid var(--grey-20);
 }
 
+.copylink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  padding: 0 0 24px;
+}
+
 .infobutton {
   width: 82%;
   cursor: pointer;
@@ -279,11 +294,42 @@ header {
   padding: 12px;
 }
 
+.copybutton {
+    width: 94%;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid var(--grey-10);
+    border-radius: 12px;
+    padding: 12px;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      align-content: center;
+
+
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+}
+
+.copybutton:hover {
+  background-color: var(--grey-5);
+  border-color: var(--grey-5);
+}
+
+.copybutton:focus, .copybutton:active {
+  background-color: white;
+  border-color: limegreen;
+}
+
+
 .moreinfo {
   display: none;
 }
 
-.audioembed {
+.audioembed, .coverembed {
   border-radius: 16px;
   width: 88vw;
   background-color: var(--grey-10);
@@ -294,6 +340,7 @@ header {
   border-radius: 0;
   background-color: black;
 }
+
 
 .openpageButton {
   cursor: pointer;
@@ -347,14 +394,42 @@ header {
 }
 
 .sharepageButton .icon {
-  max-width: 96px;
+  padding: 8px 4px 8px 4px;
 }
 
 .openlinkButton:hover, .sharepageButton:hover, .infobutton:hover {
   background-color: var(--grey-5);
 }
 
+@keyframes btn-hover {
+  0%   {scale: 1;}
+  25%  {scale: 0.98;}
+  55%  {scale: 1.01}
+  65%  {scale: 1;}
+  100% {scale: 1;}
+}
+
+.mainButton:hover {
+  animation-name: btn-hover;
+  animation-duration: 0.5s;
+}
+
+.mainButton:active {
+  scale: 0.98;
+}
+
+.empty {
+  height: 12vw;
+  max-height: 96px;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  padding: 0;
+  margin: 12px;
+}
+
 .icon {
+  line-height: 0;
   padding: 2vw;
   border-radius: 50%;
   background-color: transparent;
@@ -404,27 +479,35 @@ header h1 {
 .stream {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   flex-direction: row;
-  gap: 4px;
+  align-items: center;
+  gap: 1vw;
 }
 
 .streamsvg {
   padding: 2vw;
   width: 6vw;
-  max-width: 96px;
+  max-width: 48px;
 }
 
 .sharesvg {
   padding: 8px;
-  width: 24px;
+  width: 5vw;
+  max-width: 24px;
 }
 
 @media screen and (min-width: 568px) {
 
-.audiomodal dialog:modal, .sharemodal dialog:modal {
+.audiomodal dialog:modal {
   max-height: 72vh;
   max-width: 420px;
+  margin-bottom: auto;
+  border-radius: 16px;
+}
+
+.sharemodal dialog:modal {
+  max-height: 68vh;
+  max-width: 380px;
   margin-bottom: auto;
   border-radius: 16px;
 }
