@@ -1,7 +1,6 @@
 User-agent: *
 Disallow: /error.html
-Disallow: assets/
-Disallow: fonts/
+Disallow: asset/
 
 Host: https://kvalia.band/index.html
 Sitemap: https://kvalia.band/sitemap.xml

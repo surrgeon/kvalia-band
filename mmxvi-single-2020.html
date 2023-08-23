@@ -22,29 +22,33 @@
     <meta name="msapplication-navbutton-color" content="#fff" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#fff" />
     <link rel="canonical" href="https://kvalia.band" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://kvalia.band/mmxvi-single-2020.html" />
+    <meta property="og:url" content="https://kvalia.band/#mmxvi-2020" />
     <meta property="og:title" content="MMXVI" />
     <meta
       property="og:description"
-      content="Kvalia 2020 MMXVI Single"
+      content="Квалиа 2020 MMXVI Single"
     />
     <meta
       property="og:image"
-      content="https://kvalia.band/media/release_mmxvi-2016-og.jpg"
+      content="https://kvalia.band/media/kvalia-mmxvi-2020-cover.jpg"
     />
 
     <meta name="twitter:title" content="MMXVI" />
     <meta
       name="twitter:description"
-      content="Kvalia 2020 MMXVI Single"
+      content="Квалиа 2020 MMXVI Single"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
-      content="https://kvalia.band/media/release_mmxvi-2016-og.jpg"
+      content="https://kvalia.band/media/kvalia-mmxvi-2020-cover.jpg"
     />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C49GFNER5T"></script>
     <script>
@@ -55,103 +59,94 @@
     </script>
   </head>
 
-  <body>
+    <body style="background: none; background-color: white;">
 
+      <div class="preloader">
+        <img src="loader.svg" style="width: 16vw; height: 16vw;"/>
+      </div>
 
-    <div class="preloader">
-      <img src="loader.svg" style="width: 64px; height: 64px;"/>
-    </div>
+      <article style="margin: 2vw 6vw 32vw 6vw !important;">
 
-    <div style="width: 100%;">
-      <a href="/">
-              <img class="logo" src="media/logo.svg" style="width: 64px; height: 64px;"/></a>
-    </div>
+              <div style="width: 100%; text-align: center;">
+              <iframe style="border: 0; width: 100%; height: 118vw;" src="https://bandcamp.com/EmbeddedPlayer/album=2303847208/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/transparent=true/" seamless>
+                <a href="https://music.kvalia.band/album/mmxvi">MMXVI — Квалиа</a></iframe>
+              </div>
 
-      <main>
+          <nav>
+            <ul>
+              <p style="opacity: 50%; padding-bottom: 12px;">Avaliable to stream here</p>
 
-        <article class="kvalia release">
+              <li>
+                <a class="openlinkButton" href="https://kvalia.bandcamp.com/album/mmxvi" target="_parent">
+                  <div class="stream"><img class="streamsvg"
+                    src="asset/go-to=Bandcamp.svg"/>
+                    <p>Bandcamp</p>
+                  </div>
+                        <img class="icon" src="asset/icon-go.svg"/>
+                  </a>
+              </li>
 
-          <section class="sticky small" style="visibility: hidden;">
-            <h1>MMXVI</h1>
-          </section>
-          <section class="sticky small">
-            <h1>MMXVI</h1>
-          </section>
+              <li>
+                <a class="openlinkButton" href="https://apple.co/3scKTdi" target="_parent">
+                  <div class="stream"><img class="streamsvg"
+                    src="asset/go-to=AppleMusic.svg"/>
+                    <p>Apple Music</p>
+                  </div>
+                        <img class="icon" src="asset/icon-go.svg"/>
+                  </a>
+              </li>
 
-          <section class="small"></section>
-          <section class="sticky small">
-          <img
-            class="cover"
-            style="width: 100%;"
-            src="media/release_mmxvi-2016.jpg"
-            alt="MMXVI single cover"
-          />
-          </section>
+              <p class="moreinfo" id="more-info"
+                style="opacity: 50%; padding-bottom: 12px; padding-top: 16px; line-height: 24px;"
+              >
+                Recorded 17 June 2016 at Krasnoyarsk Siberia<br>
+                Released 11 September 2020
+              </p>
 
-          <section class="sticky small">
-            <ol> 
-            <li>
-                  1&ensp;Империя 
-            </li>
-            <li>
-                  2&ensp;Негоциант  
-            </li>
-          </ol>
-        </section>
+            </ul>
+          </nav>
 
-          <section class="sticky small">
-            <ol> 
-            <li>
-                  1&ensp;Empire 
-            </li>
-            <li>
-                  2&ensp;Negotiant 
-            </li>
-          </ol>          
-        </section>
+            <div class="modalfoot">
+              <a href="#more-info"
+                <button id="showInfoButt" onclick="showMoreFunction()" class="infobutton" style="width: 82%;">
+                  <h3 style="text-align: center;">
+                  Show more
+                  </h3>
+                </button>
+              </a>
 
-          <section class="sticky small">
-          </section>
-
-          <section class="sticky small">
-            <p>
-              recorded 17 June 2016<br>
-              released 11 September 2020<br><br>
-
-              Recorded during a single live session at "Zavod" studio in Krasnoyarsk<br><br>
-
-              Bass Guitar — Aleksey Danilenko <br>
-              Drums — Ilya Shekk <br>
-              Guitar — Viktor Oleynik <br>
-              Voice — Aleksander Maznichenko<br><br>
-
-              Mixed by Pavel Eremeev<br>
-              Artwork by Marina Leonteva<br>
-            </p>
-          </section>
-
-      </article>
-
-        <section class="links" style="width: 100%;">
-          <div class="link">
-            <a href="https://kvalia.bandcamp.com/album/mmxvi/">
-                Bandcamp
-            </a>
+              <button id="hideInfoButt" onclick="showLessFunction()" class="infobutton moreinfo" style="width: 88%;">
+                <h3 style="text-align: center;">
+                Show less
+                </h3>
+              </button>
             </div>
 
-          <div class="link">
-                          <a href="https://music.apple.com/us/album/mmxvi-single/1523625047?mt=1&app=music&ls=1">
-                Apple&nbsp;Music
-            </a>
-          </div>
-        </section>
+  </article>
 
-      </main>
+      <script>
+        window.onload = function () {
+          document.body.classList.add("loaded");
+        };
 
-    <script>
-      window.onload = function () {
-        document.body.classList.add("loaded");
-      };
-    </script>
-  </body>
+        /* ——— */
+        function showMoreFunction() {
+        document.getElementById("hideInfoButt").style.display = "block";
+        document.getElementById("showInfoButt").style.display = "none";
+        var info = document.getElementsByClassName('moreinfo');
+        for (var i = 0; i < info.length; i ++) {
+            info[i].style.display = 'block';
+        }
+        }
+        function showLessFunction() {
+        document.getElementById("hideInfoButt").style.display = "none";
+        document.getElementById("showInfoButt").style.display = "block";
+        var info = document.getElementsByClassName('moreinfo');
+        for (var i = 0; i < info.length; i ++) {
+            info[i].style.display = 'none';
+        }
+        }
+      </script>
+
+    </body>
 </html>
