@@ -1,0 +1,198 @@
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
+::selection {
+  color: black;
+  background-color: chartreuse;
+}
+
+.preloader {
+  position: fixed;
+  overflow: hidden;
+  background: white;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 1001;
+}
+
+.loaded {
+  overflow: scroll;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  margin: 0 !important;
+  background-color: white;
+  justify-content: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header, footer {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+nav {
+  margin: 0 !important;
+  padding: 0 24px;
+}
+
+nav ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 0 10px;
+}
+
+.button {
+  cursor: pointer;
+  color: transparent;
+  background-color: white;
+  border: 1px solid gainsboro;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: whitesmoke;
+}
+
+.listento {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+h1 {
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+  font-size: 14.8px;
+  line-height: 130%;
+  font-weight: 400;
+  text-align: left;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul,
+li,
+p {
+  line-height: 24px;
+  text-decoration: none;
+  list-style-type: none;
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+  padding-inline-start: 0;
+}
+
+li p {
+  font-size: 14.8px;
+  font-weight: 500;
+  text-align: left;
+  color: black;
+}
+
+footer p {
+  font-size: 14.8px;
+  font-weight: 400;
+  text-align: left;
+  color: gainsboro;
+}
+
+.head-img {
+  width: 100%;
+}
+
+.lang-eng {
+  display: none;
+}
+
+.streaming {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  line-height: 0;
+  width: 24px;
+  padding: 4px;
+  background-color: transparent;
+}
+
+.stream {
+  width: 26px;
+  padding: 4px;
+}
+
+@media screen and (min-width: 770px) {
+  main {
+    min-width: 420px;
+    border-radius: 16px;
+  }
+  body {
+    padding: 48px 0;
+    background: url(imgs/satire-2023-cover_3200.jpg) no-repeat center center fixed;
+    background-size: 2300px;
+    -webkit-background-size: 2300px;
+    -moz-background-size: 2300px;
+    -o-background-size: 2300px;
+  }
+  .head-img {
+    display: none;
+  }
+}
